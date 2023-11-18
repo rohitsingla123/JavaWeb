@@ -1,0 +1,4520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .h
+{
+    font-size:15pt;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: azure;
+    
+
+}
+.inp
+{
+    margin: 0%;
+    font-size:15pt;
+    background-color: antiquewhite;
+
+
+}
+    </style>
+</head>
+
+<body>
+
+
+    <div class="">
+
+        <!-- nav -->
+        <!-- <div class="bg-light text-right" id="nav">
+            <div class="">
+
+                
+                
+              <button class="btn btn-outline-light my-3 mr-4 text-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Menu&#9776;</button>
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">JavaProgrammes</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background:#dff9fb"> -->
+                    <div class="h2 text-center"> Java Practicle </div>
+                     
+                    <a href="#2d" class="d-block text-left text-dark border-bottom p-3 px-5"> 2D array </a>
+                    <a href="#applet" class="d-block text-left text-dark border-bottom p-3 px-5"> applet </a>
+                    <a href="#basic" class="d-block text-left text-dark border-bottom p-3 px-5"> basic programming </a>
+                    <a href="#data" class="d-block text-left text-dark border-bottom p-3 px-5"> Data conversion </a>
+                    <a href="#event" class="d-block text-left text-dark border-bottom p-3 px-5"> delegation event model </a>
+                    <a href="#exception" class="d-block text-left text-dark border-bottom p-3 px-5"> Exception handling </a>
+                    <a href="#functions" class="d-block text-left text-dark border-bottom p-3 px-5"> functions </a>
+                    <a href="#awt" class="d-block text-left text-dark border-bottom p-3 px-5"> awt </a>
+                    <a href="#inheritance" class="d-block text-left text-dark border-bottom p-3 px-5"> inheritance </a>
+                    <a href="#io" class="d-block text-left text-dark border-bottom p-3 px-5"> input output </a>
+                    <a href="#interfaces" class="d-block text-left text-dark border-bottom p-3 px-5"> interfaces </a>
+                    <a href="#jdbc" class="d-block text-left text-dark border-bottom p-3 px-5"> jdbc </a>
+                    <a href="#thread" class="d-block text-left text-dark border-bottom p-3 px-5"> mutlithreading </a>
+                    <a href="#oop" class="d-block text-left text-dark border-bottom p-3 px-5"> oops </a>
+                    <a href="#package" class="d-block text-left text-dark border-bottom p-3 px-5"> package </a>
+                    <a href="#1darray" class="d-block text-left text-dark border-bottom p-3 px-5"> 1d array </a>
+                    <a href="#string" class="d-block text-left text-dark border-bottom p-3 px-5"> strings </a>
+
+                <!-- </div>
+              </div>
+
+
+            </div>
+        </div> -->
+
+    
+<div class="container">
+
+
+<!-- 2D ARRAY -->
+<div style="white-space: pre;padding-left: 10px;" id="2d">
+
+<p class="h">/*1.Enter the Matrix of rows and columns entered by the user and print in matrix format*/
+
+</p>
+<p class="inp">
+    class Print2DArray {
+        public static void main(String[] args) {
+           final int[][] matrix = {
+              { 1, 2, 3 },
+              { 4, 5, 6 },
+              { 7, 8, 9 }
+           };
+           for (int i = 0; i < matrix.length; i++) 
+           { 
+              for (int j = 0; j < matrix[i].length; j++) 
+           { 
+                 System.out.print(matrix[i][j] + " ");
+           }
+              System.out.println();
+           }
+        }
+     }
+</p>
+<p class="h">Output</p>
+<img src="2Darray_1_7007.png"></img>
+
+
+
+<p class="h">/*2.Program to Add Two Matrices*/
+
+</p>
+<p class="inp">
+
+    class MatrixAddition{  
+        public static void main(String args[]){     
+        int arr1[][]={{15,3,4},{5,4,3},{3,4,5}};    
+        int arr2[][]={{1,8,4},{2,4,3},{1,2,4}};    
+        int arr3[][]=new int[3][3];  
+        for(int i=0;i<3;i++){    
+        for(int j=0;j<3;j++){    
+        arr3[i][j]=arr1[i][j]+arr2[i][j];     
+        }    
+        } 
+        for(int i=0;i<3;i++){    
+        for(int j=0;j<3;j++){  
+        System.out.print(arr3[i][j]+" ");     
+        }
+        System.out.print("\n");
+        }  
+        }
+        }
+    
+</p>
+<p></p>
+<p class="h">Output</p>
+<img src="2Darray_2_7007.png"></img>
+
+
+
+<p class="h">/*3.Program to Multiply Two Matrices*/</p>
+<p class="inp">
+    
+
+
+class MatrixMultiplication{
+  
+public static void main(String args[]){  
+
+
+int a[][]={{1,1,1},{2,2,2},{3,3,3}};    
+int b[][]={{1,1,1},{2,2,2},{3,3,3}};    
+    
+ 
+int c[][]=new int[3][3]; 
+    
+//multiplying and printing multiplication of 2 matrices    
+for(int i=0;i<3;i++){    
+for(int j=0;j<3;j++){    
+c[i][j]=0;  
+
+  
+for(int k=0;k<3;k++)      
+{      
+c[i][j]+=a[i][k]*b[k][j];      
+}//end of k loop  
+System.out.print(c[i][j]+" ");  //printing matrix element  
+}//end of j loop  
+System.out.println();//new line    
+}    
+}}  
+
+</p>
+<p></p>
+<p class="h">Output</p>
+<img src="2Darray_3_7007.png"></img>
+
+
+
+<p class="h">/*4.Program to subtract the two matrices*/</p>
+<p class="inp">
+    import java.util.Scanner;
+
+class MatrixSubtraction {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = input.nextInt();
+        System.out.print("Enter the number of columns: ");
+        int columns = input.nextInt();
+
+        int[][] matrix1 = new int[rows][columns];
+        int[][] matrix2 = new int[rows][columns];
+        int[][] result = new int[rows][columns];
+
+        // Input for the first matrix
+        System.out.println("Enter elements of the first matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                matrix1[i][j] = input.nextInt();
+            }
+        }
+
+        // Input for the second matrix
+        System.out.println("Enter elements of the second matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                matrix2[i][j] = input.nextInt();
+            }
+        }
+
+        // Subtract the matrices
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                result[i][j] = matrix1[i][j] - matrix2[i][j];
+            }
+        }
+
+        // Display the result
+        System.out.println("Result of matrix subtraction:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        input.close();
+    }
+}
+</p>
+<p></p>
+<p class="h">Output</p>
+<img src="2Darray_4_7007.png"></img>
+
+
+
+<p class="h">/*5.Program to determine whether two matrices are equal*/</p>
+<p class="inp">
+
+    class MatrixEqualOrNot {
+        public static void main(String[] args) {
+                           int[][] x = {{1, 2}, {3, 4}};
+   int[][] y = {{1, 2}, {3, 4}};
+   int i, j, isEqual = 1;
+   for(i = 0; i < x.length; i++)
+   {
+   for(j = 0; j < x[0].length; j++)
+   {
+   if(x[i][j] != y[i][j]) {
+   isEqual = 0;
+   break;
+   }
+   }
+   }
+   if(isEqual == 1) {
+   System.out.println("\nMatrix x is Equal to Matrix y");
+   }
+   else {
+   System.out.println("\nMatrix x is Not Equal to Matrix y");
+   }
+   }
+}
+</p>
+<p></p>
+<p class="h">Output</p>
+<img src="2Darray_5_7007.png"></img>
+
+
+<p class="h">/*6.Program to display the lower triangular matrix*/</p>
+<p class="inp">
+
+    class LowerTriangular    
+{    
+    public static void main(String[] args) {    
+    int rows, cols;    
+    int a[][] = {       
+                 {1, 2, 3},    
+                 {8, 6, 4},    
+                 {4, 5, 6}    
+                    };        
+          rows = a.length;    
+          cols = a[0].length;    
+            
+          if(rows != cols){    
+              System.out.println("Matrix should be a square matrix");    
+          }    
+          else {      
+              System.out.println("Lower triangular matrix: ");    
+              for(int i = 0; i < rows; i++){    
+                  for(int j = 0; j < cols; j++){    
+                    if(j > i)    
+                      System.out.print("0 ");    
+                    else    
+                      System.out.print(a[i][j] + " ");    
+                }    
+                System.out.println();    
+            }    
+        }    
+    }    
+}    
+</p>
+<p></p>
+<p class="h">Output</p>
+<img src="2Darray_6_7007.png"></img>
+
+<p class="h">/*7.Program to display the upper triangular matrix*/</p>
+<p class="inp">
+
+    
+import java.util.Scanner;
+
+class uppertriangularmatrix {
+    public static void main(String[] a) {
+                
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows and columns for the square matrix: ");
+        int n = s.nextInt();
+
+        int[][] matrix = new int[n][n];
+
+        System.out.println("Enter matrix elements:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matrix[i][j] = s.nextInt();
+            }
+        }
+
+        System.out.println("Upper Triangular Matrix:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j >= i) {
+                    System.out.print(matrix[i][j] + " ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println(" ");
+        } 
+
+        }
+}
+
+</p>
+<p class="h">Output</p>
+<img src="2Darray_7_7007.png"></img>
+
+
+<p class="h">/*8.Program to find the sum of each row and each column of a matrix*/</p>
+<p class="inp">
+
+    class ary2 {
+        public static void main(String[] args) {
+            int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            int rows = matrix.length;
+            int columns = matrix[0].length;
+    
+            int[] rowSums = new int[rows];
+            int[] columnSums = new int[columns];
+    
+            // Calculate row sums
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < columns; j++) {
+                    rowSums[i] += matrix[i][j];
+                }
+            }
+    
+            // Calculate column sums
+            for (int j = 0; j < columns; j++) {
+                for (int i = 0; i < rows; i++) {
+                    columnSums[j] += matrix[i][j];
+                }
+            }
+    
+            // Print row sums
+            System.out.println("Sum of each row:");
+            for (int i = 0; i < rows; i++) {
+                System.out.println("Row " + (i + 1) + ": " + rowSums[i]);
+            }
+    
+            // Print column sums
+            System.out.println("\nSum of each column:");
+            for (int j = 0; j < columns; j++) {
+                System.out.println("Column " + (j + 1) + ": " + columnSums[j]);
+            }
+        }
+    }
+
+</p>
+<p class="h">Output</p>
+<img src="2Darray_9_7007.png"></img>
+
+
+<p class="h">/*9. Program to find the transpose of a given matrix*/</p>
+<p class="inp">
+
+
+    class Arr2 {
+
+        public static void main(String[] args) {
+    
+            int a[][] = {
+                    { 1, 2, 4, 5 },
+                    { 6, 7, 8, 9 },
+                    { 10, 11, 12, 13 }
+            };
+    
+            int rows = a.length;
+            int columns = a[0].length;
+            int transpose[][] = new int[columns][rows];
+    
+            System.out.println("_____________Printing matrix__________________");
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < columns; j++) {
+                    System.out.print("   " + a[i][j]);
+                    transpose[j][i] = a[i][j];
+                }
+                System.out.println("\n");
+            }
+    
+            System.out.println("_____________Printing Transpose matrix__________________");
+    
+            for (int i = 0; i < columns; i++) {
+                for (int j = 0; j < rows; j++) {
+    
+                    System.out.print("  " + transpose[i][j]);
+    
+                }
+                System.out.println("\n");
+            }
+    
+        }
+    
+    }
+
+</p>
+<p class="h">Output</p>
+<img src="2Darray_10_7007.png"></img>
+
+
+<p class="h">/*10.Program to determine whether a given matrix is an identity matrix*/
+
+</p>
+<p class="inp">
+
+    class Identity
+    {    
+        public static void main(String[] args) {    
+            int rows, cols;    
+            boolean flag = true;    
+                
+          
+            int a[][] = {       
+                            {1, 0, 0},    
+                            {0, 1, 0},    
+                            {0, 0, 1}    
+                        };    
+                
+        
+        
+              rows = a.length;    
+            cols = a[0].length;    
+                
+          
+            if(rows != cols){    
+                System.out.println("Matrix should be a square matrix");    
+            }    
+            else {    
+                 
+                for(int i = 0; i < rows; i++){    
+                    for(int j = 0; j < cols; j++){    
+                      if(i == j && a[i][j] != 1){    
+                          flag = false;    
+                          break;    
+                      }    
+                      if(i != j && a[i][j] != 0){    
+                          flag = false;    
+                          break;    
+                      }    
+                    }    
+                }    
+                    
+                if(flag)    
+                    System.out.println("Given matrix is an identity matrix");    
+                else    
+                    System.out.println("Given matrix is not an identity matrix");    
+            }    
+        }    
+    }    
+
+</p>
+<p class="h">Output</p>
+<img src="2Darray_11_7007.png"></img>
+
+
+<p class="h">/*11.Program to Transpose matrix*/</p>
+<p class="inp">
+
+    import java.util.Scanner;
+
+    class transposematrix {
+        public static void main(String[] a) {
+            Scanner s = new Scanner(System.in);
+    
+            System.out.print("Enter number of rows: ");
+            int rows = s.nextInt();
+            System.out.print("Enter number of columns: ");
+            int columns = s.nextInt();
+    
+            int[][] matrix = new int[rows][columns];
+    
+            System.out.println("Enter elements of the matrix:");
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < columns; j++) {
+                    matrix[i][j] = s.nextInt();
+                }
+            }
+    
+            int[][] transpose = new int[columns][rows];
+    
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < columns; j++) {
+                    transpose[j][i] = matrix[i][j];
+                }
+            }
+    
+            System.out.println("Original Matrix:");
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < columns; j++) {
+                    System.out.print(matrix[i][j] + " ");
+                }
+                System.out.println();
+            }
+    
+            System.out.println("Transposed Matrix:");
+            for (int i = 0; i < columns; i++) {
+                for (int j = 0; j < rows; j++) {
+                    System.out.print(transpose[i][j] + " ");
+                }
+                System.out.println();
+            }
+    
+        }
+    }
+
+</p>
+<p class="h">Output</p>
+<img src="2Darray_12_7007.png"></img>
+
+
+<!-- <p class="h"></p>
+<p class="inp"></p>
+<p class="h">Output</p>
+<img src="2darray_6_7014.png"></img> -->
+
+</div>
+
+<!-- Applet -->
+
+<div style="white-space: pre;padding-left: 10px;" id="applet">
+
+    
+    <p class="h">1.Create an applet showing the string "Hello World" which is embedded in the HTML page.</p>
+    <p class="inp">
+import java.applet.Applet;
+import java.awt.Graphics;
+public class pro1 extends Applet
+{
+    public void paint (Graphics g)
+    {
+        g.drawString ("Hello World", 20, 20);
+    }
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="j1.png"></img>
+
+
+
+    <p class="h">2.Create an applet showing the string "Hello World" which is executed by an appletviewer.</p>
+    <p class="inp">
+
+import java.applet.Applet;
+import java.awt.*;
+
+ //<applet code= pro2 width= 600 height=500 ></applet>
+
+ public class pro2 extends Applet {
+   
+    public void paint(Graphics g){
+        g.setColor(Color.red);
+        g.drawString("hello world", 20, 20);
+    }
+    
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="j2.png"></img>
+
+
+
+    <p class="h">3.Create an applet in Java to draw a circle.</p>
+    <p class="inp">
+import java.applet.*;
+import java.awt.*;
+
+public class  pro3 extends Applet
+{
+    int x=300,y=100,r=50;
+    public void paint(Graphics g)
+    {
+        g.drawOval(x-r,y-r,100,100);
+        g.drawString("Circle",275,100);
+        
+       
+   }
+}
+//<applet code= pro3 width= 600 height=500 ></applet>      
+    </p>
+    <p class="h">Output</p>
+    <img src="j3.png"></img>
+
+
+
+    <p class="h">4.Create an applet in Java to draw a polygon.</p>
+    <p class="inp">
+import java.applet.Applet;
+import java.awt.*;
+ public class pro4 extends Applet
+ {
+ 
+public void paint( Graphics g )
+{
+int x[] = { 20, 40, 50, 30, 20, 15 }; 
+int y[] = { 50, 50, 60, 80, 80, 60 }; 
+int num=5;
+g.setColor(Color.blue); 
+g.drawPolygon(x,y, num);
+ 
+}
+}
+//<applet code= pro4 width= 600 height=500 ></applet>
+    </p>
+    <p class="h">Output</p>
+    <img src="j4.png"></img>
+
+
+
+    <p class="h">5.Create an applet in Java to draw a rectangle.</p>
+    <p class="inp">
+import java.applet.*;
+import java.awt.*;
+
+public class pro5 extends Applet {
+    public void paint(Graphics g) {
+        g.drawRect(50, 50, 200, 100);
+    }
+}
+/*<applet code="pro5" width="400" height="400"></applet> */
+    </p>
+    <p class="h">Output</p>
+    <img src="j5.png"></img>
+
+
+
+    <p class="h">6.Create an applet in Java to draw a square.</p>
+    <p class="inp">
+import java.applet.*;
+import java.awt.*;
+
+public class pro6 extends Applet {
+    public void paint(Graphics g) {
+        g.drawRect(50, 50, 200, 200);
+    }
+}
+/*<applet code="pro6" width="400" height="400"></applet> */
+    </p>
+    <p class="h">Output</p>
+    <img src="j6.png"></img>
+
+
+
+    <p class="h">7.Create an applet in Java to draw a 4 concentric circles.</p>
+    <p class="inp">
+/*Java Applet to Print Concentric Circles using Applet*/
+import java.applet.*;
+import java.awt.*;
+public class pro7 extends Applet
+{
+    //Initialize the applet
+    public void init()
+    {
+	setBackground(Color.yellow);
+    }
+    //Draw cocentric circle
+    public void paint(Graphics g)
+    {
+	g.setColor(Color.red);
+	int rad=25;
+	int dia=50;
+	for(int i=0;i<4;i++)
+	{
+	    g.drawOval(250-(i*rad),250-(i*rad),(i+1)*dia,(i+1)*dia);
+	}
+    }
+}
+/*
+<applet code = pro7 width=500 height=500>
+</applet>
+*/
+    </p>
+    <p class="h">Output</p>
+    <img src="j7.png"></img>
+
+
+
+    <p class="h">8.Create an applet in Java to draw a line.</p>
+    <p class="inp">
+import java.applet.Applet;
+import java.awt.Graphics;
+public class pro8 extends Applet{
+ 
+ public void paint(Graphics g){
+  
+
+ //draw vertical line
+ g.drawLine(10,50,20,100);
+ 
+ //draw horizontal line
+ g.drawLine(10,10,100,10);
+ }
+}
+ //<applet code= pro8 width= 600 height=500 ></applet>
+    </p>
+    <p class="h">Output</p>
+    <img src="j8.png"></img>
+
+
+
+    <p class="h">9.Create an applet in Java to draw a oval.</p>
+    <p class="inp">
+import java.awt.*;
+import java.applet.Applet;
+ 
+public class pro9 extends Applet {
+ 
+    public void paint(Graphics g)
+    {
+       // draw a ellipse
+        g.drawOval(100, 100, 150, 100);
+    }
+}
+/*<applet code="pro9" width="500" height="500"></applet> */
+    </p>
+    <p class="h">Output</p>
+    <img src="j9.png"></img>
+
+
+
+    <p class="h">10.Create an applet in Java to draw a arc.</p>
+    <p class="inp">
+import java.applet.Applet;
+import java.awt.*;
+
+
+public class pro10 extends Applet
+{
+    public void paint(Graphics g){
+        setForeground(Color.red);
+        g.drawArc(10,10,50,100,10,45);
+        g.fillArc(100,10,1000,100,0,90);
+
+    }
+}
+/*<applet code="pro10" width="400" height="400"></applet> */
+    </p>
+    <p class="h">Output</p>
+    <img src="j10.png"></img>
+
+
+
+    <p class="h">11.Create an applet in Java to change the background color.</p>
+    <p class="inp">
+import java.applet.Applet;
+import java.awt.*;
+
+public class pro11 extends Applet {
+   
+    public pro11() {
+        setBackground(Color.red);
+    }
+
+    public void paint(java.awt.Graphics g) {
+
+        g.drawString("Background Color Changed", 50, 50);
+    }
+    /*
+     * <applet code="pro11.class" width="300" height="300">
+     * </applet>
+     */
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="j11.png"></img>
+
+
+
+    <p class="h">12.Create an applet in Java to draw rounded rectangle.</p>
+    <p class="inp">
+import java.awt.*;
+import java.applet.Applet;
+ 
+public class pro12 extends Applet {
+ 
+    public void paint(Graphics g)
+    {
+          g.drawRoundRect(10,130,50,70,20,20);
+          g.fillRoundRect(70,130,50,70,20,20);
+    }
+}
+/*<applet code="pro12" width="500" height="500"></applet> */
+    </p>
+    <p class="h">Output</p>
+    <img src="j12.png"></img>
+
+
+
+    <p class="h">13.Create an applet in Java to set font.</p>
+    <p class="inp">
+import java.awt.*;    
+import java.applet.*;    
+    public class pro13 extends Applet    
+ {    
+   Font f1,f2,f3;    
+    
+   public void  init()    
+    {    
+       f1 = new Font("Arial",Font.BOLD,18);    
+       f2 = new Font("Forte",Font.PLAIN,24);    
+       f3 = new Font("Elephant",Font.ITALIC,28);    
+    }    
+          
+   public void  paint(Graphics g)    
+   {    
+      g.drawString("Welcome",50,50);    
+    
+      g.setFont(f1);     
+      g.drawString("to ",50,80);    
+    
+      g.setFont(f2);     
+      g.drawString("My ",50,110);    
+    
+      g.setFont(f3);     
+      g.drawString("Website",50,140);    
+   }    
+ }    
+    
+/* <applet code = "pro13" height = 500 width =500>  
+   </applet> */
+    </p>
+    <p class="h">Output</p>
+    <img src="j13.png"></img>
+
+
+
+    <p class="h">14.Create an applet to display a digital clock.</p>
+    <p class="inp">
+import java.awt.*;
+import java.applet.Applet;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class pro14 extends Applet {
+    DateFormat dateFormat;
+    Date date;
+    Thread t;
+    public void init() {
+        this.setSize(300,200);
+    }
+    public void paint(Graphics g)
+    {
+        try
+        {
+            Font f=new Font("Arial",Font.BOLD,50);
+            g.setFont(f);
+            g.setColor(Color.DARK_GRAY);
+            dateFormat = new SimpleDateFormat("hh:mm:ss a");
+            date = new Date();
+            g.drawString(dateFormat.format(date),5,100);
+            Font f1=new Font("Arial",Font.BOLD,10);
+            g.setFont(f1);
+            t.sleep(1000);
+            repaint();
+        }catch(Exception e)
+        {
+        
+        }
+    }
+}
+/* <applet code = "pro14" height = 500 width =500>  
+   </applet> */
+    </p>
+    <p class="h">Output</p>
+    <img src="j14.png"></img>
+
+
+
+    <p class="h">15.Java Program to Draw a Smiling Face using Graphics Class Methods</p>
+    <p class="inp">
+import java.applet.Applet;
+import java.awt.*;
+
+   //<applet code= appro1 width= 600 height=500 ></applet>
+   
+public class appro1 extends Applet 
+{
+  public void paint(Graphics g) 
+   {
+      setBackground(Color.red);
+      g.setColor(Color.yellow);
+      g.fillOval(100, 100, 350, 350);
+      g.setColor(Color.black);
+      g.fillOval(195, 190, 40, 40);
+      g.fillOval(325, 190, 40, 40);
+      g.drawArc(200, 290, 150, 70, 180, 180);
+   }
+
+}
+    </p>
+
+    <p class="h">Output</p>
+    <img src="j15.png"></img>
+
+
+</div>
+
+
+<!--Basic Prog-->
+
+<!-- <div style="white-space: pre;padding-left: 10px;" id="basic">
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src="2darray_6_7014.png"></img>
+
+
+</div> -->
+<div style="white-space: pre;padding-left: 10px;" id="basic">
+
+    
+    <p class="h">1.Write a java program to print 'Hello World' on screen</p>
+    <p class="inp">
+        class Test
+        {
+            public static void main(String args[])
+            {
+                System.out.println("Hello World");
+            }
+        }
+    </p>
+    <p class="h">Output</p>
+    <img src="bpc1.png"></img>
+
+
+</div>
+
+
+
+    
+    <p class="h">2.Write a java program to print the sum of two numbers</p>
+    <p class="inp">
+        class p2 {<br>
+
+            public static void main(String args[]) {<br>
+               
+                int a = 12390;<br>
+                int b = 440;<br>
+                int c = a + b;<br>
+                
+                System.out.println("The Sum og given number is :" + c);<br>
+            
+            }
+        }
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="bpc2.png"></img>
+
+    
+    
+    <p class="h">4.Write the java program to print the sum,multiply, subtract, divide and remainder of the two numbers. </p>
+    <p class="inp">
+        
+        class Test<br>
+        {<br>
+            public static void main(String args[])<br>
+            {<br>
+                int n1 = 5;<br>
+        
+                int n2 = 3;<br>
+        
+                System.out.println("The two number"+n1+" and "+n2
+                    +"\n sum is "+(n2+n1)
+                    +"\n multiply is "+(n2*n1)
+                    +"\n subtract is "+(n2-n1)
+                    +"\n divide is "+(n2/n1)
+                    +"\n remainder is "+(n2%n1)
+                );<br>
+                
+            }<br>
+        }
+     
+    </p>
+    <p class="h">Output</p>
+    <img src="bpc4.png"></img>
+
+    
+    <p class="h">7.Write a java program to convert decimal number to binary number.</p>
+    <p class="inp">
+        class Test<br>
+{<br>
+    public static void main(String args[])<br>
+    {<br>
+        int decimal = 0123; // decminal number
+<br>
+        // in-build function Integer wrapper class decminal to binary return
+<br>
+        String binary = Integer.toBinaryString(decimal);
+<br>
+        System.out.println(decimal+" decimal to binary is "+binary); // convert to binary
+   <br>
+    }<br>
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="program7.png"></img>
+
+     
+    <p class="h">8.Write a java program to convert bianary number to decimal number.</p>
+    <p class="inp">
+        
+        class Test<br>
+        {<br>
+            public static void main(String args[])
+            <br>{
+                String binary = "1010011";  // binary number
+        <br>
+                // in-build function Integer wrapper class  binary to decmial return integer
+        <br>
+                int decimal = Integer.parseInt(binary, 2);
+        <br>
+                System.out.println(binary+" binary to decmial is "+decimal); // convert to decmial
+            <br>}
+        <br>}
+           
+    </p>
+    <p class="h"></p>
+    <img src="bpc8.png"></img>
+
+     
+    <p class="h">9.Write a java program to check wheather a java is installed on your computer or not.</p>
+    <p class="inp">
+        class Test
+<br>{
+    <br>public static void main(String args[])
+    <br>{
+       <br> System.out.println("{ Java is Installed }");    // if not installed fail to execute
+    <br>}
+<br>}
+    </p>
+    <p class="h">Output</p>
+    <img src="bpc9.png"></img>
+
+</div>
+
+    <!-- <div style="white-space: pre;padding-left: 10px;" id="data"> -->
+         
+
+     
+        
+    
+    </Var></Var></Var></Var>
+
+        <!-- packages -->
+
+    <div style="white-space: pre;padding-left: 10px;" id="package"
+    class="h">1.Create a java program to access the java.util.Date class through import keyboard and print the current date of the system.</p>
+    <p class="inp">
+        import java.util.Date;
+        <br>class A{
+            <br>public static void main(String a[])
+            <br>{
+               <br> Date obj = new  Date();
+                <br>System.out.println(obj); 
+           <br> }
+        <br>} 
+    </p>
+    <p class="h">Output</p>
+    <img src="package1.png"></img>
+    <p class="h">2.Create a java program to access the java.util.Date class through qualified way and print the current date of the system.</p>
+    <p class="inp">
+        
+public class packages2_7024 {
+<br>public static void main(String[] args) {
+   <br> java.util.Date currentDate = new java.util.Date();
+   <br> System.out.println("Current Date: " + currentDate);
+<br> }
+<br>}
+    </p>
+    <p class="h">Output</p>
+    <img src="packages2_7024.png"></img>
+    <p class="h">3.Create a java program to access the java.util.Date class through import keyword and print the current date of the system but inherit the date class.</p>
+    <p class="inp">
+        import java.util.Date;
+
+public class CustomDate {
+private Date date;
+
+public CustomDate() {
+    date = new Date();
+}
+
+public Date getCurrentDate() {
+    return date;
+}
+
+public static void main(String[] args) {
+    CustomDate customDate = new CustomDate();
+    Date currentDate = customDate.getCurrentDate();
+
+    System.out.println("Current Date: " + currentDate);
+}
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7006package3.png"></img>
+    <p class="h">4.Create a java program to access the java.util.Date through qualified way and print the current date of the system but inherit the Date class.</p>
+    <p class="inp">
+        class Date {
+<br>                public static void main(String args[]){
+<br>            java.util.Date date=new java.util.Date();  
+    <br>        System.out.println(date); 
+        <br>    }
+       <br> }
+        
+    
+    </p>
+    <p class="h">Output</p>
+    <img src="7086Packages4.png"></img>
+
+    </div>
+<!-- exception handling -->
+<div style="white-space: pre;padding-left: 10px;" id="exception">
+<h1>EXCEPTION HANDLING</h1>
+    <p class="h">1.Write a java program that throws and exception and catch it using a try catch block.</p>
+    <p class="inp">
+        class Exception
+        <br>{
+            <br>public static void main(String[] args)
+            <br>{
+                <br>try {
+                    <br>int[] arr = new int[5];
+            
+                    <br>  arr[10] = 50; // This statement will throw an exception
+
+                    <br>        } catch (ArrayIndexOutOfBoundsException e) {
+                        <br>System.out.println("Exception caught: " + e);
+                        <br> }
+                        <br>    }
+                        <br>}
+
+        </p>
+    <p class="h">Output</p>
+    <img src="7077ExceptionHandling1.png"></img>
+    <p class="h">1.Write a java program that throws and exception and catch it using a try catch block.</p>
+    <p class="inp">
+        class Exception
+        <br>{
+            <br>public static void main(String[] args)
+            <br>{
+                <br>try {
+                    <br>int[] arr = new int[5];
+            
+                    <br>  arr[10] = 50; // This statement will throw an exception
+
+                    <br>        } catch (ArrayIndexOutOfBoundsException e) {
+                        <br>System.out.println("Exception caught: " + e);
+                        <br> }
+                        <br>    }
+                        <br>}
+
+        </p>
+    <p class="h">Output</p>
+    <img src="7077ExceptionHandling1.png"></img>
+
+    <p class="h">2.Write a java program that takes an integer as a parameter and throws an exception if the number is odd.</p>
+    <p class="inp">
+        class OddNum_Exp {
+           <br> public static void main(String x[]) {
+            <br>int a =4;
+            <br>checknum(a);
+            <br> a =5;
+            <br> checknum(a);
+            <br> }
+          
+            <br>   public static void checknum(int a) {
+                <br> try {
+                    <br>checkEvenNum(a);
+                    <br>  System.out.println(a + " is even.");
+                    <br> } catch (IllegalArgumentException e) {
+                        <br>System.out.println("Exception :" + e.getMessage());
+                        <br> }
+                        <br> }
+          
+                        <br>   public static void checkEvenNum(int b) {
+                            <br> if (b % 2 != 0) {
+                                <br>throw new IllegalArgumentException(b + " is odd.");
+                                <br> }
+                                <br> }
+                                <br> }
+        </p>
+    <p class="h">Output</p>
+    <img src="7083Exceptionhandling2.png"></img>
+
+<p class="h">3.Write a java program to create a method that reads a file and thrown an exception if the file is not found.</p>
+<p class="inp"> import java.io.File;
+    <br>import java.io.FileNotFoundException;
+    <br>import java.util.Scanner;
+     
+    <br>class Read_File {
+     <br> public static void main(String x[] ) {
+        <br>try {
+         <br> r_File("test2.txt");
+        } 
+        <br>catch (FileNotFoundException e) {
+          <br>System.out.println("Exception: " + e.getMessage());
+        <br>}
+      <br>}
+    
+      <br>public static void r_File(String fname) throws FileNotFoundException {
+        <br>File file = new File(fname);
+        <br>Scanner scanner = new Scanner(file);
+    
+    
+        <br>while (scanner.hasNextLine()) {
+          <br>String line = scanner.nextLine();
+          <br>System.out.println(line);
+       <br> }
+    
+   <br>     scanner.close();
+     <br> }
+    <br>}</p>
+<p class="h">Output</p>
+<img src="7083Exceptionhandling3.png"></img>    
+<P class="h">4.Write a java program that reads a list of numbers from a file and throws an exception if any of the numbers is positive.</P>
+<p class="inp">import java.io.BufferedReader;
+   <br> import java.io.File;
+   <br>import java.io.FileNotFoundException;
+   <br>import java.io.FileReader;
+   <br> import java.io.IOException;
+    
+   <br>    class exception4 {
+    <br> class PositiveNumberException extends Exception {
+        <br>    public PositiveNumberException(String message) {
+            <br>    super(message);
+            <br>}
+        }
+        <br> public static void main(String[] args) {
+            <br>    File filename = new File("numbers.txt");
+    
+            <br>         try {
+                new exception4().checkPositiveNumbers(filename);
+                <br>System.out.println("No positive numbers found.");
+            } <br>catch (PositiveNumberException e) {
+                System.err.println("Exception: " + e.getMessage());
+            } <br>catch (IOException e) {
+                System.err.println("Error reading the file: " + e.getMessage());
+            }<br>
+            <br>}
+    
+            <br>     void checkPositiveNumbers(File filename) throws IOException, PositiveNumberException {
+            try {
+                <br>BufferedReader reader = new BufferedReader(new FileReader(filename));
+                <br>String line;
+                <br>while ((line = reader.readLine()) != null) {
+                    <br>int number = Integer.parseInt(line);
+                    <br>if (number > 0) {
+                        <br>   throw new exception4.PositiveNumberException("Positive number found: " + number);
+                        <br> }
+                        <br> }
+                        <br>reader.close();
+                        <br> } catch (FileNotFoundException e){
+                            <br>    throw new IOException("The specified file was not found.", e);
+                            <br> }
+                            <br> }
+                            <br>}</p>
+<p class="h">Output</p>
+<img src="7001Exception4.png"></img>
+<p class="h">5.Write a java program that reads a file and throws an exception if the file is empty.</p>
+<p class="inp">
+   <br> import java.io.File;
+    <br>import java.io.FileReader;
+    <br>import java.io.IOException;
+    
+   <br> class EmptyFileException extends Exception {
+       <br> public EmptyFileException(String message) {
+           <br> super(message);
+       <br> }
+    <br>}
+    
+    <br>class CheckEmptyFile {
+        <br>public static void main(String[] args) {
+            <br>try {
+               <br> checkFileNotEmpty("data.txt");
+            } 
+            <br>catch (EmptyFileException e) {
+                <br>System.out.println("Empty file detected: " + e.getMessage());
+            } 
+            <br>catch (IOException e) {
+                <br>System.out.println("File not found or cannot be read: " + e.getMessage());
+           <br> }
+        }
+    <br>
+        <br>public static void checkFileNotEmpty(String fileName) throws IOException, EmptyFileException {
+            <br>File file = new File(fileName);
+    
+            <br>if (!file.exists() || file.length() == 0) {
+                <br>throw new EmptyFileException("File is empty or does not exist.");
+            <br>}
+    
+            <br>FileReader reader = new FileReader(file);
+        <br>    reader.close();
+        }
+    <br>}
+    </p>
+<p class="h">Output</p>
+<img src="7055exceptionHandling5.png"></img>
+</div>
+
+
+<!-- <div style="white-space: pre;padding-left: 10px;">
+
+    <p class="h"></p>
+    <p class="inp"></p>
+    <p class="h">Output</p>
+    <img src="2darray_6_7014.png"></img>
+
+
+</div> -->
+
+
+
+<!-- Funtion -->
+
+<div style="white-space: pre;padding-left: 10px;" id="functions">
+
+    <p class="h">/*1.Write a java method to find the smallest number amoung three numbers. */</p>
+    <p class="inp">
+
+class function1{
+    public static void main(String[] args) {
+        int num1 = 3;
+        int num2 = 17;
+        int num3 = 5;
+
+        int smallest = findSmallestNumber(num1, num2, num3);
+
+        System.out.println("The smallest number is: " + smallest);
+    }
+
+    public static int findSmallestNumber(int num1, int num2, int num3) {
+        int smallest = num1;
+
+        if (num2 < smallest) {
+            smallest = num2;
+        }
+
+        if (num3 < smallest) {
+            smallest = num3;
+        }
+
+        return smallest;
+    }
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="function1_7007.png"></img>
+
+
+    <p class="h">/*2.Write a Java method to compute the average of three numbers.*/</p>
+    <p class="inp">
+    
+    class AverageCalculator {
+    static double computeAverage(double num1, double num2, double num3) {
+       return (num1 + num2 + num3) / 3.0;
+   }
+
+   public static void main(String[] args) {
+       double number1 = 10.0;
+       double number2 = 5.0;
+       double number3 = 8.0;
+
+       double average = computeAverage(number1, number2, number3);
+
+       System.out.println("The average is: " + average);
+   }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="function2_7007.png"></img>
+
+
+    <p class="h">/*3.Write a Java method to display the middle character of a string. Note: a) If the length of the string 
+        is odd there will be two middle characters. b) If the length of the string is even there will be one 
+        middle character.*/</p>
+    <p class="inp">
+        import java.util.Scanner;
+
+          class function3 {
+          public static void main(String[] args)
+            {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input a string: ");
+                String str = in.nextLine();
+                System.out.print("The middle character in the string: " + middle(str)+"\n");
+            }
+         public static String middle(String str)
+            {
+                int position;
+                int length;
+                if (str.length() % 2 == 0)
+                {
+                    position = str.length() / 2 - 1;
+                    length = 2;
+                }
+                else
+                {
+                    position = str.length() / 2;
+                    length = 1;
+                }
+                return str.substring(position, position + length);
+            }
+        }
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="function3_7007.png"></img>
+
+
+    <p class="h">/*4.Write a java method to count all the words in a string.*/</p>
+    <p class="inp">
+    
+
+class a
+
+{
+
+static int countWord(String s)
+{
+int t=1;
+for(int i=0; i<s.length(); i++)
+{
+
+if((s.charAt(i) == ' ') && (s.charAt(i+1) != ' '))
+{
+t++;
+}
+}
+return t;
+}
+
+public static void main(String args[])
+{
+
+System.out.println(countWord("Hello How are you"));
+}
+
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="function4_7007.png"></img>
+
+
+    <p class="h">/*Write a Java method to compute the future investment value 
+    at a given interest rate for a specified number of years.*/</p>
+    <p class="inp">
+    import java.util.Scanner;
+    class FutureInvestment {
+ 
+    public static void main(String[] args) {
+    Scanner in = new Scanner(System.in); 
+    System.out.print("Input the investment amount: ");
+ 	double investment = in.nextDouble();
+ 	System.out.print("Input the rate of interest: ");
+	double rate = in.nextDouble();
+	System.out.print("Input number of years: ");
+	int year = in.nextInt();
+	
+	rate *= 0.01;
+	
+	System.out.println("Years    FutureValue");
+	for(int i = 1; i <= year; i++) {
+    	int formatter = 19;
+	    if (i >= 10) formatter = 18;
+		System.out.printf(i + "%"+formatter+".2f\n", futureInvestmentValue(investment, rate/12, i));
+       }
+	 }
+ 
+ public static double futureInvestmentValue(double investmentAmount, double monthlyInterestRate, int years) {
+		return investmentAmount * Math.pow(1 + monthlyInterestRate, years * 12);
+	}
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="function5_7007.png"></img>
+
+
+</div>
+
+
+
+
+<!-- Delegation event model -->
+<div style="white-space: pre;padding-left: 10px;" id="event">
+<p class="h">.java program to Create a Button and Display image in the frame when clicked.</p>
+<p class="inp">
+<br>    import javax.swing.*;
+<br>import java.awt.*;
+<br>import java.awt.event.*;
+
+<br>public class event {
+   <br> static JFrame frame;
+
+    <br>public static void main(String[] args) {
+        <br>frame = new JFrame("Button Image");
+       <br> frame.setSize(500, 500);
+       <br> frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       <br> frame.getContentPane().setBackground(Color.white);
+        <br>frame.setLayout(new FlowLayout());
+
+       <br> JButton button = new JButton("Display");
+        <br>frame.add(button);
+
+        <br>button.addActionListener(new ActionListener() {
+            <br>public void actionPerformed(ActionEvent e) {
+                <br>ImageIcon icon = new ImageIcon("logo.jpeg");
+                <br>JLabel label = new JLabel(icon);
+                <br>frame.add(label);
+                <br>frame.pack();
+                <br>frame.setSize(500, 500);
+            <br>}
+       <br> });
+
+        <br>frame.setVisible(true);
+  <br>  }
+<br>}
+
+</p>
+<p class="h">Output</p>
+<img src="7031delegationeventmodel3.png"></img>
+
+<p class="h">4.Java program to create a two radio button and display selected button label.</p>
+<p class="inp">import javax.swing.*;
+    import java.awt.*;
+    import java.awt.event.*;
+    class Radio_Button implements ActionListener
+    {
+        static JRadioButton yes;
+        static JRadioButton no;
+        static JTextField text;
+        
+        public static void main(String args[])
+        {
+            //Create a frame
+            JFrame frame=new JFrame("Radio Button");
+            frame.setSize(500,500);
+            frame.setLayout(null);
+            frame.setBackground(Color.white);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            
+            text=new JTextField();
+            text.setBounds(0,0,500,50);
+            frame.add(text);
+            
+            yes=new JRadioButton("Yes");
+            no=new JRadioButton("No");
+            yes.setBounds(210,100,80,60);
+            no.setBounds(210,200,80,60);
+            frame.add(yes);
+            frame.add(no);
+            
+            Radio_Button obj=new Radio_Button();
+            
+            yes.addActionListener(obj);
+            no.addActionListener(obj);
+            //Display the frame
+            frame.setVisible(true);
+        }
+        
+        public void actionPerformed(ActionEvent e)
+        {
+            String b=e.getActionCommand();		
+            if(b.equals("Yes"))
+            {
+                if(no.isSelected())
+                    no.setSelected(false);
+            }
+            else
+            {
+                if(yes.isSelected())
+                    yes.setSelected(false);
+            }
+            text.setText("Label of Button Selected : "+b);
+        }
+    }</p>
+<p class="h">Output</p>
+<img src="7098DelegationEventModel4.png"></img>
+
+<p class="h">5.java program to handle KeyBoardEvent.</p>
+<p class="inp">
+    // Java Program to Handle KeyBoardEvent
+    import java.awt.*;
+    import java.awt.event.*;
+    
+    class Main implements KeyListener {
+        static Frame frame;
+        static TextField tf1;
+        static TextField tf2;
+    
+        // Driver function
+        public static void main(String args[]) {
+            frame = new Frame("Keyboard Event");
+            frame.setSize(500, 500);
+            frame.setLayout(null);
+    
+            tf1 = new TextField();
+            tf1.setBounds(150, 100, 500, 50);
+    
+            tf2 = new TextField();
+            tf2.setBounds(140, 400, 500, 50);
+    
+            Main obj = new Main();
+    
+            tf2.addKeyListener(obj);
+            frame.addWindowListener(new WindowAdapter() {
+                public void windowClosing(WindowEvent w) {
+                    frame.dispose();
+                }
+            });
+            frame.setVisible(true);
+            frame.add(tf1);
+            frame.add(tf2);
+        }
+    
+        public void keyReleased(KeyEvent e) {
+            tf1.setText("");
+            tf1.setText("Key Released : " + e.getKeyCode());        
+            System.out.println("Key Released");
+        }
+    
+        // function to display the unicode of key pressed and the character if it is a letter or a digit
+        public void keyPressed(KeyEvent e) {
+            tf1.setText("");
+            tf1.setText("Key Pressed : " + e.getKeyCode());
+            System.out.println("Key Pressed");
+        }
+    
+        // function to display the character of the key typed
+        public void keyTyped(KeyEvent e) {
+            tf1.setText("");
+            tf1.setText("Key Typed : " + e.getKeyChar());
+        System.out.println("Key Typed");
+        }
+    }</p>
+<p class="h">Output</p>
+<img src="7002delegationeventmodel5.png"></img>
+
+<p class="h">7.Java program to Get and set State and Get label for a CheckBOX.</p>
+<p class="inp">import javax.swing.*;
+    import java.awt.*;
+    import java.awt.event.*;
+    class Check_Box implements ActionListener
+    {
+        static JTextField text;
+        static Checkbox checkbox;
+        
+        public static void main(String args[])
+        {
+            //Create a frame
+            JFrame frame=new JFrame("Check Box");
+            frame.setSize(500,500);
+            frame.setBackground(Color.white);
+            frame.setLayout(null);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            
+            text=new JTextField();
+            text.setBounds(0,0,500,50);
+            frame.add(text);
+            
+            JButton get_st=new JButton("Get State");
+            JButton set_st=new JButton("Set State");
+            JButton get_lb=new JButton("Get Label");
+            get_st.setBounds(50,80,100,50);
+            set_st.setBounds(180,80,100,50);
+            get_lb.setBounds(310,80,100,50);
+            frame.add(get_st);
+            frame.add(set_st);
+            frame.add(get_lb);
+            
+            Check_Box obj=new Check_Box();
+            
+            get_st.addActionListener(obj);
+            set_st.addActionListener(obj);
+            get_lb.addActionListener(obj);
+            
+            checkbox=new Checkbox("Sample Checkbox");
+            checkbox.setBounds(150,200,200,80);
+            frame.add(checkbox);
+            //Display the frame
+            frame.setVisible(true);
+        }
+        
+            @Override
+        public void actionPerformed(ActionEvent e)
+        {
+            String option=e.getActionCommand();
+            if(option.equals("Get State"))
+                get_State();
+            else if(option.equals("Set State"))
+                set_State();
+            else
+                get_Label();
+        }
+        
+        public void get_State()
+        {
+            boolean state=checkbox.getState();
+            if(state==true)
+                text.setText("State of Checkbox : Checked");
+            else
+                text.setText("State of Checkbox : Un-Checked");
+        }
+        
+        public void set_State()
+        {
+                    text.setText("State of Checkbox changed from ");
+            boolean state=checkbox.getState();
+            if(state==true)
+            {
+                checkbox.setState(false);
+                text.setText(text.getText()+"Checked to Un-Checked");
+            }
+            else
+            {
+                checkbox.setState(true);
+                text.setText(text.getText()+"Un-Checked to Checked");
+            }
+        }
+        
+        public void get_Label()
+        {
+            text.setText("Label of the checkbox is : ");
+                    text.setText(text.getText()+checkbox.getLabel());	
+        }
+    }</p>
+<p class="h">Output--</p>
+<img src="7098DelegationEventModel7.png"></img>
+
+<p class="h">8.Java program to Create checkBoxes and Radio Buttons.</p>
+<p class="inp">import javax.swing.*;
+    import java.awt.*;
+    import java.awt.event.*;
+    class Button_Checkbox implements ActionListener,ItemListener
+    {
+        static JFrame frame;
+        static JLabel text1,text2;
+        static JCheckBox[] checkbox;
+        static JRadioButton[] button;
+        
+        public static void main(String args[])
+        {
+          
+        frame=new JFrame("Buttons & Checkboxes");
+        frame.setSize(600,600);
+        frame.setLayout(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setBackground(Color.white);
+        
+        text1=new JLabel("");
+        text1.setBounds(0,450,600,50);
+        frame.add(text1);
+        text2=new JLabel("");
+        text2.setBounds(0,500,600,50);
+        frame.add(text2);
+        
+        Button_Checkbox obj=new Button_Checkbox();
+        
+        button=new JRadioButton[3];
+        for(int i=0;i<3;i++)
+        {
+            button[i]=new JRadioButton("Button "+(i+1));
+            button[i].setBounds(200,i*80,100,50);
+            frame.add(button[i]);
+            button[i].addActionListener(obj);
+        }
+        
+        checkbox=new JCheckBox[3];
+        for(int i=0;i<3;i++)
+        {
+            checkbox[i]=new JCheckBox("Checkbox"+(i+1));
+            checkbox[i].setBounds(220,(240)+i*80,100,50);
+            frame.add(checkbox[i]);
+            checkbox[i].addItemListener(obj);
+        }
+        
+        frame.setVisible(true);
+        }
+       
+        public void actionPerformed(ActionEvent e)
+        {
+            String s="";
+        for(int i=0;i<3;i++)
+        {
+            if(button[i].isSelected())
+                s=s+" "+button[i].getText();
+        }
+        text1.setText("Button(s) Selected : "+" "+s);
+        }
+       
+        public void itemStateChanged(ItemEvent e)
+        {
+            String s="";
+        for(int i=0;i<3;i++)
+        {	
+            if(checkbox[i].isSelected())
+                s=s+" "+checkbox[i].getText();				
+        }
+        text2.setText("Checkbox(s) Selected : "+s);	
+        }
+    }
+</p>
+<p class="h">Output</p>
+<img src="7098DelegationEventModel8.png"></img>
+
+
+</div>
+
+
+
+
+
+
+<!--Data Conversion-->
+
+<div style="white-space: pre;padding-left: 10px;" id="data">
+
+    
+    <p class="h">1.How to convert String to int</p>
+    <p class="inp">
+
+// How to convert String to int
+public class StrToInt 
+{
+	public static void main(String[] args) 
+	{
+		String str = "123";
+		int i=Integer.parseInt(str);
+		System.out.println("String is : "+str);
+		System.out.println("Str Convert to a int: "+ i);
+		System.out.println(1+i);
+		
+	}
+
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">2.</p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">3.</p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">4.</p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">5.How to convert String to float</p>
+    <p class="inp">
+class StringToFloatExample {
+    public static void main(String[] args) {
+        // Example String containing a floating-point number
+        String floatString = "3.14";
+
+        // Convert String to float using Float.parseFloat()
+        try {
+            float floatValue = Float.parseFloat(floatString);
+            System.out.println("Converted float value: " + floatValue);
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Invalid float format in the input string");
+            e.printStackTrace();
+        }
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">6.How to convert float to String</p>
+    <p class="inp">
+
+//How to convert float to String
+public class FloatToString 
+{
+	public static void main(String[] args) 
+	{
+		float f = 10.4f;
+		System.out.println(f + 2);
+		String stringValue = "" + f;
+		System.out.println(stringValue + 2);
+	}
+
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">7.How to convert String to double</p>
+    <p class="inp">
+package BCA5Practical;
+//How to convert String to double
+public class StringToDouble 
+{
+	public static void main(String[] args) 
+	{
+		String str = "0.5";
+		double D=Double.parseDouble(str);
+		System.out.println("String is "+str);
+		System.out.println("String Converted to an Double "+ D);
+		System.out.println("Showing the String was converted to Double above "+(1+D));
+	}
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">8.How to convert double to String
+    </p>
+    <p class="inp">
+import java.util.Scanner;
+class ja{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter a double number: "); 
+double num = sc.nextDouble();
+String str = Double.toString(num);
+System.out.println("Converted String: " + str);   
+    }
+}
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">9.</p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h">10.How to convert Date to String</p>
+    <p class="inp">
+import java.util.Date;
+import java.text.SimpleDateFormat;
+class DateToString{
+public static void main(String a[])
+{
+Date date=new Date();
+System.out.println(date);
+SimpleDateFormat s=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+String str=s.format(date);
+System.out.println(str);
+}
+}
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <!-- <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+
+    
+    <p class="h"></p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>
+
+
+</div>
+
+ -->
+
+
+<!--AWT-->
+
+<div style="white-space: pre;padding-left: 10px;" id="awt">
+
+
+
+    <p class="h">1.Create a simple AWT application that displays a button with FlowLayout manager.
+    </p>
+    <p class="inp">
+
+import java.awt.*;
+import java.awt.event.*;
+
+class a
+{
+    public static void main(String[] x) 
+    {
+        // Create a new frame.
+        Frame f = new Frame("AWT Button FlowLayout ");
+
+        // Set the size of the frame.
+        f.setSize(300, 300);
+
+        // Handle the window closing event.
+        f.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+        // Create a button and add it to the frame.
+        Button b1= new Button("Click me!");
+        f.add(b1);
+
+        // Create a label and add it to the frame.
+        Label l1 = new Label("You have not clicked the button yet.");
+        f.add(l1);
+
+        // Set the layout manager for the frame to FlowLayout.
+        f.setLayout(new FlowLayout());
+
+        // Display the frame.
+        f.setVisible(true);
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_awt1.png"></img>
+
+    
+
+
+    <p class="h">2.Create a simple AWT application that displays a button with Custom Layout.
+</p>
+    <p class="inp">
+
+import java.awt.*;
+import java.awt.event.*;
+
+class a{
+    public static void main(String[] x) 
+    {
+        // Create a new frame.
+        Frame f = new Frame("AWT Button custom Layout ");
+
+        // Set the size of the frame.
+        f.setSize(300, 300);
+
+       
+        // Create a button and add it to the frame.
+        Button b1= new Button("Click me!");
+        
+        // Set the layout manager for the frame tocustom layout.
+        b1.setBounds(150,100,60,60);
+        f.add(b1);
+
+        // Create a label and add it to the frame.
+        Label l1 = new Label("Please click the button.");
+        f.add(l1);
+
+      
+        // Display the frame.
+        f.setVisible(true);
+         // Handle the window closing event.
+        f.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_awt2.png"></img>
+
+
+
+
+    <p class="h">3. Create a simple AWT application that displays multiple 
+    buttons with BorderLayout manager (North, East, West, South, Center).
+    </p>
+    <p class="inp">
+
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Frame;
+        
+class AWTButtonExample {
+            public static void main(String[] args) {
+                Frame frame = new Frame("AWT Button Example");
+        
+               
+                Button northButton = new Button("North");
+                Button eastButton = new Button("East");
+                Button westButton = new Button("West");
+                Button southButton = new Button("South");
+                Button centerButton = new Button("Center");
+        
+               
+                frame.add(northButton, BorderLayout.NORTH);
+                frame.add(eastButton, BorderLayout.EAST);
+                frame.add(westButton, BorderLayout.WEST);
+                frame.add(southButton, BorderLayout.SOUTH);
+                frame.add(centerButton, BorderLayout.CENTER);
+        
+                
+                frame.setSize(400, 300);
+                frame.setVisible(true);
+        
+               
+                frame.addWindowListener(new java.awt.event.WindowAdapter() {
+                    public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+                        System.exit(0);
+                    }
+                });
+            }
+        }
+        
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_awt3.png"></img>
+
+
+
+
+    <p class="h">4. Create a simple AWT application that displays a TextField with FlowLayout manager.</p>
+    <p class="inp">
+
+        //create  a simple AWT application  that displays a TextField with FlowLayout manager.
+class awt{
+            public static void main(String[] gfdsafgvsds){
+                java.awt.Frame f = new java.awt.Frame();
+                java.awt.TextField t = new java.awt.TextField("Vipin");
+                f.setSize(100,200);
+                f.setVisible(true);
+                f.add(t);
+            }
+        }
+        
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_awt4.png"></img>
+
+
+
+
+    <p class="h">5.Create a simple AWT application that displays a TextField with Custom Layout.
+
+    </p>
+    <p class="inp">
+
+        //create  a simple AWT application  that displays a TextField with Custom manager.
+class awt{
+	public static void main(String[] gfdsafgvsds){
+        java.awt.Frame f = new java.awt.Frame();
+        java.awt.TextField t = new java.awt.TextField("Vipin");
+        f.setLayout(null);
+        t.setBounds(30,100,150,30);
+		f.setSize(100,200);
+		f.setVisible(true);
+		f.add(t);
+	}
+}
+
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_awt5.png"></img>
+
+
+
+
+    <p class="h">6.Create a simple AWT application that displays a Checkbox with FlowLayout manager.</p>
+    <p class="inp">
+
+        //Create a simple awt Application that displays a Checkbox with flowLayout Manager.
+class awt{
+            public static void main(String[] gfdsafgvsds){
+                java.awt.Frame f = new java.awt.Frame();
+                java.awt.Checkbox t = new java.awt.Checkbox("Vipin");
+               
+                f.setSize(100,200);
+                f.setVisible(true);
+                f.add(t);
+            }
+        }
+        
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_awt6.png"></img>
+
+
+
+
+    <p class="h">7.Create a simple AWT application that displays a Checkbox with Custom Layout.
+
+    </p>
+    <p class="inp">
+
+        //Create a simple awt Application that displays a Checkbox with Custom Manager.
+class awt{
+            public static void main(String[] gfdsafgvsds){
+                java.awt.Frame f = new java.awt.Frame();
+                java.awt.Checkbox t = new java.awt.Checkbox("Vipin");
+               f.setLayout(null);
+               t.setBounds(30,100,150,30);
+                f.setSize(100,200);
+                f.setVisible(true);
+                f.add(t);
+            }
+        }
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_awt7.png"></img>
+
+
+
+
+</div>
+
+<!-- inheritance -->
+
+<div style="white-space: pre;padding-left: 10px;" id="inheritance">
+
+    
+    <p class="h">/*1.Write a java program to create a class Animal with a method called makeSound().
+        Create a subclass called Cat that overrides the makeSound() method to bark */
+    </p>
+    <p class="inp">
+        
+// Animal class
+class Animal {
+    public void makeSound() {
+        System.out.println("this is from animal class...");
+    }
+}
+
+// Cat subclass extending Animal
+class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("cat does not barking"); // Cat overrides to bark
+    }
+}
+
+class Inheritance1 {
+    public static void main(String[] args) {
+        Animal genericAnimal = new Animal(); // Creating an instance of Animal
+        Animal myCat = new Cat(); // Creating an instance of Cat as Animal
+
+        System.out.println("Sound of animal:");
+        genericAnimal.makeSound(); // Calling makeSound() on the generic animal
+
+        System.out.println("\nSound of the cat:");
+        myCat.makeSound(); // Calling makeSound() on the cat (which will bark - overridden method)
+    }
+}
+
+
+    </p>
+    <p class="h">Output</p>
+    <img src="Inheritance1_7007.png"></img>
+
+
+
+    <p class="h">/*2.Write a Java program to create a class called Vehicle with a method called drive(). Create a subclass called Car that overrides the drive() method to print "Repairing a car". */
+    </p>
+    <p class="inp">
+        
+        // Vehicle class
+        class Vehicle {
+            public void drive() {
+                System.out.println("Driving a vehicle...");
+            }
+        }
+        
+        // Car subclass extending Vehicle
+        class Car extends Vehicle {
+            @Override
+            public void drive() {
+                System.out.println("Repairing a car"); // Car overrides to repair
+            }
+        }
+        
+        class Inheritance2 {
+            public static void main(String[] args) {
+                Vehicle vehicle = new Vehicle(); // Creating an instance of Vehicle
+                Vehicle car = new Car(); // Creating an instance of Car as Vehicle
+        
+                System.out.println("Driving a vehicle:");
+                vehicle.drive(); // Calling drive() on the vehicle
+        
+                System.out.println("\nRepairing a car:");
+                car.drive(); // Calling drive() on the car (which will repair - overridden method)
+            }
+        }
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="Inheritance2_7007.png"></img>
+
+
+
+    <p class="h">/*3.Write a Java program to create a class called Shape with a method called getArea(). Create a subclass called Rectangle that overrides the getArea() method to calculate the area of a rectangle. */
+    </p>
+    <p class="inp">
+        
+        // Shape class
+        class Shape {
+            public double getArea() {
+                return 0; // Default implementation for unknown shapes
+            }
+        }
+        
+        // Rectangle subclass extending Shape
+        class Rectangle extends Shape {
+            private double length;
+            private double width;
+        
+            public Rectangle(double length, double width) {
+                this.length = length;
+                this.width = width;
+            }
+        
+            @Override
+            public double getArea() {
+                return length * width; // Calculate area of rectangle
+            }
+        }
+        
+        class Inheritance3 {
+            public static void main(String[] args) {
+                Shape shape = new Shape(); // Creating an instance of Shape (will use default getArea())
+        
+                Rectangle rectangle = new Rectangle(20, 40); // Creating an instance of Rectangle
+                double rectangleArea = rectangle.getArea(); // Calculating area of rectangle
+        
+                System.out.println("Area of a shape (default): " + shape.getArea());
+                System.out.println("Area of a rectangle: " + rectangleArea);
+            }
+        }
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="Inheritance3_7007.png"></img>
+
+
+
+    <p class="h">/*4.Write a Java program to create a class called Employee with methods called work() and 
+        getSalary(). Create a subclass called HRManager that overrides the work() method and adds a new 
+        method called addEmployee(). */
+    </p>
+    <p class="inp">
+        
+// Employee class
+class Employee {
+    private double salary;
+
+    public Employee(double salary) {
+        this.salary = salary;
+    }
+
+    public void work() {
+        System.out.println("Employee is working...");
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
+
+// HRManager subclass extending Employee
+class HRManager extends Employee {
+    public HRManager(double salary) {
+        super(salary);
+    }
+
+    @Override
+    public void work() {
+        System.out.println("HR Manager is working...");
+    }
+
+    public void addEmployee() {
+        System.out.println("HR Manager is adding a new employee...");
+    }
+}
+
+class Inheritance4 {
+    public static void main(String[] args) {
+        Employee emp = new Employee(6000); // Creating an instance of Employee
+        HRManager hrManager = new HRManager(7500); // Creating an instance of HRManager
+
+        emp.work(); // Calling work() for Employee
+        System.out.println("Employee Salary: " + emp.getSalary());
+
+        System.out.println();
+
+        hrManager.work(); // Calling work() for HRManager (overridden method)
+        System.out.println("HR Manager Salary: " + hrManager.getSalary());
+
+        hrManager.addEmployee(); // Calling addEmployee() for HRManager (specific method)
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src=""></img>Inheritance4_7007.png
+
+
+
+    <p class="h">/*5.Write a Java program to create a class known as "BankAccount" with methods called 
+        deposit() and withdraw(). Create a subclass called SavingsAccount that overrides the withdraw() 
+        method to prevent withdrawals if the account balance falls below one hundred.*/
+        </p>
+    <p class="inp">
+        
+        class BankAccount 
+        {
+        float bal=0;
+        
+        BankAccount(){}
+        BankAccount(float b)
+        {
+        bal=b;
+        }
+        
+        void deposit(int b)
+        {
+        
+        bal=bal+b;
+        System.out.println("Amount " +b+ " Successfully deposited\nCurrent balance = " +bal+ "\n");
+        }
+        
+        void withdraw(int b)
+        {
+        if (b>0 && b<=bal)
+        {
+        System.out.println("Collect your amount = " +b);
+        bal=bal-b;
+        System.out.println("Current balance = " +bal+ "\n");
+        }
+        else
+        {
+        System.out.println("Insufficient balance");
+        }
+        }
+        }
+        
+        
+        class SavingsAccount extends BankAccount
+        {
+        
+        
+        SavingsAccount(float b)
+        {
+        bal=b;
+        }
+        
+        void withdraw(int b)
+        {
+        if(bal<100 && bal<b)
+        {
+        System.out.println("Insufficient balence");
+        } 
+        else
+        {
+        System.out.println("Collect your amount = " +b);
+        bal=bal-b;
+        System.out.println("Current balance = " +bal+ "\n");
+        }
+        }
+        
+        
+        public static void main(String args[])
+        {
+        
+        BankAccount obj1=new BankAccount(200);
+        
+        obj1.deposit(100);
+        
+        obj1.withdraw(300);
+        
+        
+        SavingsAccount obj2=new SavingsAccount(10);
+        obj2.withdraw(100);
+        
+        
+        }
+        
+        
+        }
+    </p>
+    <p class="h">Output</p>
+    <img src="Inheritance5_7007.png"></img>
+
+
+</div>
+
+
+
+
+
+
+<!--Input/Output-->
+
+<div style="white-space: pre;padding-left: 10px;" id="io">
+
+    
+    <p class="h">1.Enter the character from user using InputStreamReader
+
+    </p>
+    <p class="inp">
+
+//Enter the character from user using InputStreamReader
+
+import java.io.*;  
+class InputStreamReaderP{  
+public static void main(String args[])throws Exception{  
+  
+InputStreamReader r=new InputStreamReader(System.in);  
+BufferedReader br=new BufferedReader(r);  
+  
+System.out.println("Enter your name");  
+String name=br.readLine();  
+System.out.println("Welcome "+name);  
+ }  
+}  
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007Inputoutput1.png"></img>
+
+
+
+    <p class="h">2.Enter the string from user using BufferedStreamReader
+
+    </p>
+    <p class="inp">
+
+import java.io.*;
+
+class Buffered_Stream
+{
+  public static void main ( String s[] ) throws IOException
+  {
+    System.out.print ( "Enter the string: " );
+
+    BufferedReader input = new BufferedReader ( new InputStreamReader ( System.in ) );
+
+    String inputString = input.readLine();
+
+  
+
+    System.out.println ( "Entered string is: " + inputString );
+  }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007Inputoutput2.png"></img>
+
+
+
+    <p class="h">3.Enter the integer from user using Scanner class
+
+    </p>
+    <p class="inp">
+//Enter the integer from the user using Scanner class
+import java.util.Scanner;
+class A{
+    public static void main(String arg[])
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter an integer :-");
+        int a = s.nextInt();
+        System.out.println(a);
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_awt3.png"></img>
+
+
+
+    <p class="h">4.Enter the float from user using Scanner class
+
+    </p>
+    <p class="inp">
+
+import java.util.Scanner;
+
+class FloatInputExample {
+    public static void main(String[] args) {
+        // Create a Scanner object to read user input
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a float number: ");
+
+        // Check if the next token entered by the user is a float
+        if (scanner.hasNextFloat()) {
+            float userInput = scanner.nextFloat();
+            System.out.println("You entered: " + userInput);
+        } else {
+            System.out.println("Invalid input. Please enter a valid float number.");
+        }
+
+        // Close the Scanner to release resources
+        scanner.close();
+    }
+}
+
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="7007Inputoutput4.png"></img>
+
+
+
+    <p class="h">5.Enter the double from user using Scanner class
+
+    </p>
+    <p class="inp">
+        
+import java.util.Scanner;
+
+ class prog5 {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the console
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter a double
+        System.out.print("Enter a double: ");
+
+        // Check if the next input is a double
+        if (scanner.hasNextDouble()) {
+            // Read the double from the user
+            double userInput = scanner.nextDouble();
+
+            // Display the entered double
+            System.out.println("You entered: " + userInput);
+
+            // Check if the entered double is positive, negative, or zero
+            if (userInput > 0) {
+                System.out.println("The entered double is positive.");
+            } else if (userInput < 0) {
+                System.out.println("The entered double is negative.");
+            } else {
+                System.out.println("The entered double is zero.");
+            }
+        } else {
+            // If the input is not a double, display an error message
+            System.out.println("Invalid input. Please enter a valid double.");
+        }
+
+        // Close the scanner
+        scanner.close();
+    }
+}
+
+
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007Inputoutput5.png"></img>
+
+
+
+    <p class="h">6.Enter the boolean from user using Scanner class
+
+    </p>
+    <p class="inp">
+import java.util.*;  
+class Boolean {    
+    public static void main(String[] args) {         
+           System.out.print("Are you above 18?- ");  
+           Scanner sc = new Scanner(System.in);  
+           boolean bn = sc.nextBoolean();  
+           if (bn == true) {  
+               System.out.println("You are over 18");  
+           } else if (bn == false) {  
+               System.out.println("You are under 18");  
+           }  
+           sc.close();                      
+     }  
+}  
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007Inputoutput6.png"></img>
+
+
+
+    <p class="h">7.Enter the short integer from user using Scanner class</p>
+    <p class="inp">
+
+import java.util.Scanner;  
+class a  
+{  
+public static void main(String[] x)   
+{  
+       //object of the Scanner class  
+       Scanner s=new Scanner(System.in);  
+       System.out.print("Enter a short integer value: ");  
+       //invoking nextShort() method that reads an integer input by keyboard  
+       //storing the input number in a variable num  
+       int num = s.nextShort();  
+       System.out.println("The Short integer entered by the user is: "+num);  
+}  
+}  
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007Inputoutput7.png"></img>
+
+
+</div>
+
+
+
+
+
+
+<!--Interfaces-->
+
+<div style="white-space: pre;padding-left: 10px;" id="interfaces">
+
+    <p class="h">
+    /*1.Write a Java program to create an interface Shape with the getArea() method. Create three classes 
+    Rectangle, Circle, and Triangle that implement the Shape interface. Implement the getArea() method for 
+    each of the three classes.*/
+    </p>
+    <p class="inp">
+    // Shape interface
+interface Shape {
+    double getArea();
+}
+
+// Rectangle class implementing Shape
+class Rectangle implements Shape {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public double getArea() {
+        return length * width;
+    }
+}
+
+// Circle class implementing Shape
+class Circle implements Shape {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+// Triangle class implementing Shape
+class Triangle implements Shape {
+    private double base;
+    private double height;
+
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
+    @Override
+    public double getArea() {
+        return 0.5 * base * height;
+    }
+}
+
+// Main class to test the Shape interface and its implementations
+ class ShapeTest {
+    public static void main(String[] args) {
+        // Test Rectangle
+        Rectangle rectangle = new Rectangle(5, 8);
+        System.out.println("Area of Rectangle: " + rectangle.getArea());
+
+        // Test Circle
+        Circle circle = new Circle(4);
+        System.out.println("Area of Circle: " + circle.getArea());
+
+        // Test Triangle
+        Triangle triangle = new Triangle(6, 10);
+        System.out.println("Area of Triangle: " + triangle.getArea());
+    }
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="1 interface.png"></img>
+
+
+    <p class="h">/*2. Write a Java program to create a Animal interface with a method called bark() that takes no 
+        arguments and returns void. Create a Dog class that implements Animal and overrides speak() to 
+        print "Dog is barking".*/</p>
+    <p class="inp">
+    interface Animal {
+    void bark();
+}
+
+
+
+class Dog implements Animal {
+    
+    
+    public void bark() {
+        System.out.println("DOG IS BARKING");
+    }
+}
+
+
+class demo {
+    public static void main(String[] args) {
+        
+        
+        Dog dog = new Dog();
+        dog.bark();
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="2 interface.png"></img>
+
+
+    <p class="h">/*3. Write a Java program to create an interface Flyable with a method called fly_obj(). 
+        Create three classes Spacecraft, Airplane, and Helicopter that implement the Flyable interface. 
+        Implement the fly_obj() method for each of the three classes.*/</p>
+    <p class="inp">
+        // Flyable interface
+        interface Flyable {
+            void fly_obj();
+        }
+        
+        // Spacecraft class implementing Flyable interface
+        class Spacecraft implements Flyable {
+            @Override
+            public void fly_obj() {
+                System.out.println("Spacecraft is flying in space.");
+            }
+        }
+        
+        // Airplane class implementing Flyable interface
+        class Airplane implements Flyable {
+            @Override
+            public void fly_obj() {
+                System.out.println("Airplane is flying in the sky.");
+            }
+        }
+        
+        // Helicopter class implementing Flyable interface
+        class Helicopter implements Flyable {
+            @Override
+            public void fly_obj() {
+                System.out.println("Helicopter is flying in the air.");
+            }
+        }
+        
+        class fly{
+            public static void main(String[] args) {
+                // Create objects of each class and call fly_obj() method
+                Spacecraft sc = new Spacecraft();
+                Airplane ap = new Airplane();
+                Helicopter hc = new Helicopter();
+        
+                // Call fly_obj() method for each object
+                sc.fly_obj();
+                ap.fly_obj();
+                hc.fly_obj();
+            }
+        }
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="3 interface.png"></img>
+
+
+    <!-- <p class="h"></p>
+    <p class="inp"></p>
+    <p class="h">Output</p>
+    <img src="2darray_6_7014.png"></img> -->
+
+
+    <p class="h">/*5.Write a Java program to create an interface Resizable with methods resizeWidth(int width) 
+        and resizeHeight(int height) that allow an object to be resized. Create a class Rectangle that implements 
+        the Resizable interface and implements the resize methods.*/</p>
+    <p class="inp">
+    interface Resizable {
+  
+    void resizeWidth(int width);
+
+  void resizeHeight(int height);
+}
+
+class Rectangle implements Resizable {
+   
+    private int width;
+    private int height;
+
+    public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public void resizeWidth(int width) {
+        this.width = width;
+    }
+
+   
+    public void resizeHeight(int height) {
+        this.height = height;
+    }
+
+    public void printSize() {
+        System.out.println("Width: " + width + ", Height: " + height);
+    }
+}
+
+
+ class Final_size {
+    public static void main(String s[] ) {
+       
+        Rectangle r = new Rectangle(50, 30);
+
+        r.printSize();
+
+      
+        r.resizeWidth(80);
+        r.resizeHeight(40);
+        r.printSize();
+    }
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="5 interface.png"></img>
+
+
+</div>
+
+
+
+<!--JDBC-->
+
+<div style="white-space: pre;padding-left: 10px;" id="jdbc">
+
+    <p class="h">/*1.Create the connection with MySQL Database and manage the driver.*/</p>
+    <p class="inp">
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+class MySQLConnectionExample {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/test";
+        String user = "root";
+        String password = "";
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection(url, user, password);
+
+            if (connection != null) {
+                System.out.println("Connected to the MySQL database");
+                connection.close();
+            }
+        } catch (ClassNotFoundException e) {
+            System.err.println("MySQL JDBC driver not found");
+        } catch (SQLException e) {
+            System.err.println("Connection to the database failed: " + e.getMessage());
+        }
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="jdbc1.png"></img>
+
+
+    <p class="h">/*2.Create the table in the database from Java API.*/</p>
+    <p class="inp">
+        
+        
+    //Program no. : jdbc2
+//Program name : Create the table in the database from Java API.
+
+// java -cp "D:\44\javaPrograms\jd\JDBC;C:\mysql-connector-j-8.2.0.jar" DataDefination
+
+class DataDefination {
+    public static void main(String[] args) {
+        try {
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            java.sql.Connection connect = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/test",
+                    "root", "");
+
+            if (connect.isClosed()) {
+                System.out.println(" Your Connection is Closed!");
+                System.exit(0);
+            }
+
+            // ------------------------------------------------------
+
+            System.out.println(" Your Connection is Establised ");
+
+            java.sql.Statement state = connect.createStatement();
+
+            String create_table_query = "CREATE Table mytable3 (id int)";
+
+            Boolean result = state.execute(create_table_query);
+
+            if (result) {
+                System.out.println("Table created!");
+            }
+            // -----------------------------------------------------
+
+            connect.close();
+
+            if (connect.isClosed())
+                System.out.println(" Successfully Connection is Closed!");
+        } catch (ClassNotFoundException error) {
+            System.out.print(error.getMessage());
+        } catch (java.sql.SQLException error) {
+            System.out.print(error.getMessage());
+        }
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="jdbc2.png"></img>
+
+
+    <p class="h">/*3.Insert the row in the table in the database from Java API.*/</p>
+    <p class="inp">
+        import java.sql.*;
+
+        class employee{
+        public static void main(String s[]){
+        
+        try{
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","");
+        
+        Statement s1=con.createStatement();
+        int x= s1.executeUpdate("insert into users values(8,'test','something@gmail.com')");
+        if(x==1){
+        System.out.println("Row inserted successfully");}
+        }catch(ClassNotFoundException e){System.out.println(e);}
+        catch(SQLException e){System.out.println(e);}
+        }}
+    </p>
+    <p class="h">Output</p>
+    <img src="jdbc3.png"></img>
+
+
+    <p class="h">/*4.Update the row in the table in the database from Java API.*/</p>
+    <p class="inp">
+        import java.sql.Connection;
+        import java.sql.DriverManager;
+        import java.sql.SQLException;
+        import java.sql.Statement;
+        
+        class DatabaseUpdateWithStatement {
+            public static void main(String[] args) {
+                String url = "jdbc:mysql://localhost:3306/mydb";
+                String username = "root";
+                String password = "";
+        
+                // SQL update statement
+                String updateSql = "UPDATE users SET id = 2 WHERE id = 5";
+        
+                try {
+                    Connection connection = DriverManager.getConnection(url, username, password);
+                    Statement statement = connection.createStatement();
+                    int rowsAffected = statement.executeUpdate(updateSql);
+        
+                    if (rowsAffected > 0) {
+                        System.out.println("Row updated successfully.");
+                    } else {
+                        System.out.println("No rows updated.");
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    </p>
+    <p class="h">Output</p>
+    <img src="jdbc4.png"></img>
+
+
+    <p class="h">/*5.Delete the row in the table in the database from Java API.*/</p>
+    <p class="inp">
+        //  Delete the row in the table in the database from Java API.
+
+        import java.sql.Connection;
+        import java.sql.DriverManager;
+        import java.sql.Statement;
+        import java.sql.SQLException;
+        import java.sql.ResultSet;
+        
+        class Main {
+            private static Connection con;
+            private static int rows_affected;
+        
+            public static void main(String[] args) {
+                
+                try{
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
+                    
+                    Statement st = con.createStatement(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_UPDATABLE);
+                    String sql = "DELETE FROM students";
+                    
+                    rows_affected = st.executeUpdate(sql);
+                    System.out.println("Numbers of rows deleted : "+rows_affected);
+                    
+                    //telling user that he is deleting from an empty table.
+                    ResultSet rs =  st.executeQuery("SELECT * FROM students");
+                    if(!rs.next())
+                    System.out.println("--------   Hey User, Your table is empty.  --------");
+                }
+                catch(ClassNotFoundException c)
+                {
+                    c.printStackTrace();
+                }
+                catch(SQLException s)
+                {
+                    s.printStackTrace();
+                }
+        
+                if(con!=null) {
+                    try {
+                        con.close();
+                    }
+                    catch(SQLException sql_e) {
+                        sql_e.printStackTrace();
+                    }
+                }
+            }
+        }
+    </p>
+    <p class="h">Output</p>
+    <img src="jdbc5.png"></img>
+
+
+</div>
+
+
+
+<!--Multithreading-->
+
+<div style="white-space: pre;padding-left: 10px;" id="thread">
+
+    <p class="h">/*1.Write a Java program to create a basic Java thread that prints "Hello, World!" when executed.*/</p>
+    <p class="inp">
+    class sampleThread extends Thread{
+    public void run(){
+        System.out.println("hello world");
+    }
+}
+
+
+
+public class Multithreading_1{
+  public static void main(String[] args) {
+    sampleThread foo = new sampleThread();
+    foo.run();
+    
+  }
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="M1.png"></img>
+
+
+    <p class="h">/*3.Write a Java Program that sorts an array of integers using multiple threads.*/</p>
+    <p class="inp">
+        
+
+        import java.util.Arrays;
+        
+        class ParallelMergeSort {
+        
+            private final int[] array;
+        
+            private ParallelMergeSort(int[] array) {
+                this.array = array;
+            }
+        
+            private void merge(int low, int mid, int high) {
+                int[] left = Arrays.copyOfRange(array, low, mid + 1);
+                int[] right = Arrays.copyOfRange(array, mid + 1, high + 1);
+        
+                int i = 0, j = 0, k = low;
+        
+                while (i < left.length && j < right.length) {
+                    if (left[i] <= right[j]) {
+                        array[k++] = left[i++];
+                    } else {
+                        array[k++] = right[j++];
+                    }
+                }
+        
+                while (i < left.length) {
+                    array[k++] = left[i++];
+                }
+        
+                while (j < right.length) {
+                    array[k++] = right[j++];
+                }
+            }
+        
+            private void mergeSort(int low, int high) {
+                if (low < high) {
+                    int mid = (low + high) / 2;
+        
+                    Thread leftThread = new Thread(() -> mergeSort(low, mid));
+                    Thread rightThread = new Thread(() -> mergeSort(mid + 1, high));
+        
+                    leftThread.start();
+                    rightThread.start();
+        
+                    try {
+                        leftThread.join();
+                        rightThread.join();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+        
+                    merge(low, mid, high);
+                }
+            }
+        
+            private static void parallelMergeSort(int[] array) {
+                ParallelMergeSort sorter = new ParallelMergeSort(array);
+                sorter.mergeSort(0, array.length - 1);
+            }
+        
+            public static void main(String[] args) {
+                int[] arr = {12, 4, 7, 3, 9, 5, 2, 1, 6, 11, 8, 10};
+        
+                System.out.println("Array before sorting: " + Arrays.toString(arr));
+                
+                parallelMergeSort(arr);
+        
+                System.out.println("Array after sorting: " + Arrays.toString(arr));
+            }
+        }
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="M3.png"></img>
+
+
+    <p class="h">/*4.Write a Java program that performs matrix multiplication using multiple threads.*/</p>
+    <p class="inp">
+        import java.util.concurrent.ExecutorService;
+        import java.util.concurrent.Executors;
+        import java.util.concurrent.TimeUnit;
+        
+        public class MatrixMultiplication {
+        
+            private static final int MATRIX_SIZE = 3; 
+            private static final int NUM_THREADS = 3; 
+        
+            private static int[][] resultMatrix = new int[MATRIX_SIZE][MATRIX_SIZE];
+            private static int[][] matrixA = new int[MATRIX_SIZE][MATRIX_SIZE];
+            private static int[][] matrixB = new int[MATRIX_SIZE][MATRIX_SIZE];
+        
+            public static void main(String[] args) {
+                initializeMatrix(matrixA);
+                initializeMatrix(matrixB);
+        
+                System.out.println("Matrix A:");
+                printMatrix(matrixA);
+        
+                System.out.println("\nMatrix B:");
+                printMatrix(matrixB);
+        
+                ExecutorService executor = Executors.newFixedThreadPool(NUM_THREADS);
+        
+                for (int i = 0; i < MATRIX_SIZE; i++) {
+                    executor.execute(new MatrixMultiplier(i));
+                }
+        
+                executor.shutdown();
+        
+                try {
+                    executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+        
+                System.out.println("\nResult Matrix:");
+                printMatrix(resultMatrix);
+            }
+        
+            private static void initializeMatrix(int[][] matrix) {
+                for (int i = 0; i < MATRIX_SIZE; i++) {
+                    for (int j = 0; j < MATRIX_SIZE; j++) {
+                        matrix[i][j] = (int) (Math.random() * 10);
+                    }
+                }
+            }
+        
+            private static void printMatrix(int[][] matrix) {
+                for (int i = 0; i < MATRIX_SIZE; i++) {
+                    for (int j = 0; j < MATRIX_SIZE; j++) {
+                        System.out.print(matrix[i][j] + " ");
+                    }
+                    System.out.println();
+                }
+            }
+        
+            private static class MatrixMultiplier implements Runnable {
+                private final int row;
+        
+                public MatrixMultiplier(int row) {
+                    this.row = row;
+                }
+        
+                @Override
+                public void run() {
+                    for (int col = 0; col < MATRIX_SIZE; col++) {
+                        for (int k = 0; k < MATRIX_SIZE; k++) {
+                            resultMatrix[row][col] += matrixA[row][k] * matrixB[k][col];
+                        }
+                    }
+                }
+            }
+        }
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="M4.png.png"></img>
+
+
+    <p class="h">/*5.Write a Java program that calculates the sum of all prime numbers up to a given limit using multiple threads.*/</p>
+    <p class="inp">
+        // Calculate sum of prime numbers up to a given limit using multiple threads
+        class MyThread extends Thread {
+            private int start, end;
+            private int sum = 0;
+        
+            MyThread(int start, int end) {
+                this.start = start;
+                this.end = end;
+            }
+        
+            public void run() {
+                System.out.println("My thread is running");
+                for (int i = start; i <= end; i++) {
+                    if (isPrime(i))
+                        sum += i;
+                }
+            }
+        
+            boolean isPrime(int n) {
+                if (n == 0 || n == 1)
+                    return false;
+                for (int i = 2; i <= Math.sqrt(n); ++i) {
+                    if (n % i == 0)
+                        return false;
+                }
+                return true;
+            }
+        
+            public int getSum() {
+                return sum;
+            }
+        }
+        
+        class SumOfPrimes {
+            MyThread[] myThreads;
+            private int sum = 0;
+            private int limit = 20;
+            private static int threadCount = 4;
+        
+            // Constructor to initialize the array of threads
+            public SumOfPrimes(int n) throws InterruptedException {
+                this.myThreads = new MyThread[n];
+                for (int i = 0; i < n; i++) {
+                    int start = ((limit * i) / n);
+                    int end = (i == n-1) ? limit : ((limit * (i+1))/n) - 1;
+                    myThreads[i] = new MyThread(start, end);
+                }
+            }
+        
+            // Function to start all threads
+            public void startAll() throws InterruptedException {
+                for (int i = 0; i < myThreads.length; i++) {
+                    myThreads[i].start();
+                    myThreads[i].join();
+                }
+            }
+        
+            public void getSum() {
+                for (int i = 0; i < myThreads.length; i++) {
+                    this.sum += myThreads[i].getSum();
+                }
+            }
+            
+            public static void main(String[] args) {
+                try {
+                    SumOfPrimes mt = new SumOfPrimes(threadCount);
+                    mt.startAll();
+                    mt.getSum();
+                    System.out.println("Sum of prime numbers is " + mt.sum);
+                } catch (InterruptedException e) {
+                    System.err.print("Error: " + e);
+                }
+            }
+        }
+    </p>
+    <p class="h">Output</p>
+    <img src="M5.png"></img>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- OOPS -->
+    <div style="white-space: pre;padding-left: 10px;" id="oop"> 
+
+        
+        <p class="h">1. Write a Java program to create a class called "Person" with a name and age attribute. 
+            Create two instances of the "Person" class, set their attributes using the constructor, and print 
+            their name and age.
+
+        </p>
+        <p class="inp">
+            // Person.java
+class Person {
+    private String name;
+    private int age;
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public String getName() {
+        return name;
+    }
+    public int getAge() {
+        return age;
+    }
+}
+// Main.java
+ class Main {
+  public static void main(String[] args) {
+    Person person1 = new Person("Ean Craig", 11);
+    Person person2 = new Person("Evan Ross", 12);
+    System.out.println(person1.getName() + " is " + person1.getAge() + " years old.");
+    System.out.println(person2.getName() + " is " + person2.getAge() + " years old.\n");
+  }
+}
+
+        </p>
+        <p class="inp">Output</p>
+        <img src="7007Oop1.png">
+
+
+
+        <p class="h">2. Write a Java program to create a class called "Dog" with a name and breed attribute. 
+            Create two instances of the "Dog" class, set their attributes using the constructor and modify 
+            the attributes using the setter methods and print the updated values.
+
+        </p>
+        <p class="inp">
+            public class Dog {
+                private String name;
+                private String breed;
+            
+                public Dog(String name, String breed) {
+                    this.name = name;
+                    this.breed = breed;
+                }
+            
+                public void setName(String name) {
+                    this.name = name;
+                }
+            
+                public void setBreed(String breed) {
+                    this.breed = breed;
+                }
+            
+                public String getName() {
+                    return name;
+                }
+            
+                public String getBreed() {
+                    return breed;
+                }
+            
+                public static void main(String[] args) {
+                    Dog dog1 = new Dog("Max", "Labrador");
+                    Dog dog2 = new Dog("Bella", "Golden Retriever");
+            
+                    System.out.println("Initial values:");
+                    System.out.println("Dog 1 - Name: " + dog1.getName() + ", Breed: " + dog1.getBreed());
+                    System.out.println("Dog 2 - Name: " + dog2.getName() + ", Breed: " + dog2.getBreed());
+            
+                    dog1.setName("Charlie");
+                    dog2.setBreed("German Shepherd");
+            
+                    System.out.println("\nUpdated values:");
+                    System.out.println("Dog 1 - Name: " + dog1.getName() + ", Breed: " + dog1.getBreed());
+                    System.out.println("Dog 2 - Name: " + dog2.getName() + ", Breed: " + dog2.getBreed());
+                }
+            }
+            
+              
+        </p>
+        <p class="inp">Output</p>
+        <img src="7007Oop2.png">
+
+
+
+        <p class="h">3.</p>
+        <p class="inp">
+            
+        </p>
+        <p class="inp">Output</p>
+        <img src="">
+
+
+
+        <p class="h">4. Write a Java program to create a class called "Circle" with a radius attribute. 
+            You can access and modify this attribute. Calculate the area and circumference of the circle.</p>
+        <p class="inp">
+        class prog4 {
+    /*
+     * Topic = OOP
+     * prog.no 4. Write a Java program to create a class called "Circle" with a
+     * radius attribute.
+     * You can access and modify this attribute. Calculate the area and
+     * circumference of the circle
+     */
+    private double radius;
+
+    public prog4(double radius) {
+        this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+
+    public double calculateCircumference() {
+        return 2 * Math.PI * radius;
+    }
+
+    public static void main(String[] args) throws java.lang.ClassNotFoundException {
+
+        prog4 myCircle = new prog4(5.0);
+
+        System.out.println("Radius: " + myCircle.getRadius());
+
+        myCircle.setRadius(7.5);
+        System.out.println("Updated Radius: " + myCircle.getRadius());
+
+        double area = myCircle.calculateArea();
+        double circumference = myCircle.calculateCircumference();
+
+        System.out.println("Area: " + area);
+        System.out.println("Circumference: " + circumference);
+    }
+}
+    
+        </p>
+        <p class="inp">Output</p>
+        <img src="7007Oop4.png">
+
+
+        <p class="h">
+        /* 5.Write a Java Program to create a class called "Book" with attributes for title, author, and ISBN, and methods to add
+        and remove books from a colletion */ 
+        </p>
+        <p class="inp">class Book     
+        { 
+        String title,author,ISBN; 
+        
+        void add(String title2,String author2,String ISBN2)
+        {
+        title=title2;
+        author=author2;
+        ISBN=IBN2;
+        
+        System.out.println("Successfully Added"); 
+        }
+        void remove(String ISBN2)
+        
+        {
+        if(ISBN2==ISBN)
+        {
+        title=null;
+        author=null;
+        ISBN=null;
+        System.out.println("Successsfully removed from the collection");
+        }
+        else
+        {
+        System.out.println("This ISBN number does not exist in our collection");
+        }
+        }
+        public static void main(String args[]){
+        Book obj1 = new Book();
+        obj1.add("The Grass is Always Greener","Jeffrey Archer","1-86092-049-7");
+        obj1.remove("1-86092-049-7");
+        System.out.println("\n\n");
+        Book obj2 = new Book();
+        obj2.add("A Boy at Seven","John Bidwell","1-86092-022-5");
+        obj2.remove("1-86092-024-5");
+        }
+        } 
+        </p>    
+        
+        
+        
+
+        <p class="h"></p>
+        <img src="7007Oop5.png">
+            </div>
+
+
+<!--1D Array-->
+
+<div style="white-space: pre;padding-left: 10px;" id="1darray">
+
+    
+    <p class="h">/*1.Program to copy all elements of one array into another array*/</p>
+    <p class="inp">
+
+
+class OnearrTOAnotherArray 
+{
+	public static void main(String[] args) 
+	{
+		int arr1[] = new int[] {1,2,3 ,4 ,5};
+		int arr2[] = new int[arr1.length];
+		System.out.println("Elements of First array: ");
+	    for (int i = 0; i < arr1.length; i++) 
+	    {
+	      System.out.print(arr1[i] + " ");
+	    }
+	    //copying the first array to the second array
+	    for (int i = 0; i < arr1.length; i++)
+	    {
+	        arr2[i] = arr1[i];
+	    }
+	    System.out.println();
+	    System.out.println("Elements of Second array: ");
+	    for (int i = 0; i < arr2.length; i++) 
+	    {
+	      System.out.print(arr2[i] + " ");
+	    }
+	}
+
+}
+
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_1d1.png"></img>
+
+
+    <p class="h">/*2. Program to find the frequency of each element in the array*/</p>
+    <p class="inp">
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+class FrequencyCounter {
+    public static void main(String[] args) {
+       
+        int[] array = {1, 2, 3, 4, 1, 2, 2, 3, 5, 4, 6, 7, 6, 8, 9, 9};
+
+        
+        Map<Integer, Integer> frequencyMap = new HashMap<>();
+
+        
+        for (int element : array) {
+           
+            if (frequencyMap.containsKey(element)) {
+                frequencyMap.put(element, frequencyMap.get(element) + 1);
+            } else {
+               
+                frequencyMap.put(element, 1);
+            }
+        }
+
+        System.out.println("Element frequencies:");
+        for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_1d2.png"></img>
+
+
+    <p class="h">/*3.Program to left rotate the elements of an array*/</p>
+    <p class="inp">
+
+        /*Program to left rotate the elements of an array*/
+
+class RotateLeft {  
+    public static void main(String[] args) {  
+      
+        int [] arr = new int [] {1, 2, 3, 4, 5}; 
+          //n determine the number of times an array should be rotated 
+        int n = 3;  
+        //Displays original array  
+        System.out.println("Original array: ");  
+        for (int i = 0; i < arr.length; i++) {  
+            System.out.print(arr[i] + " ");  
+        }  
+          
+        for(int i = 0; i < n; i++){  
+            int j, first;  
+            //Stores the first element of the array  
+            first = arr[0];  
+            for(j = 0; j < arr.length-1; j++){  
+                //Shift element of array by one  
+                arr[j] = arr[j+1];  
+            }  
+            //First element of array will be added to the end  
+            arr[j] = first;  
+        }  
+        System.out.println();  
+        //Displays resulting array after rotation  
+        System.out.println("Array after left rotation: ");  
+        for(int i = 0; i< arr.length; i++){  
+            System.out.print(arr[i] + " ");  
+        }  
+    }  
+}  
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_1d3.png"></img>
+
+
+    <p class="h">/*4.Program to print the duplicate elements of an array*/</p>
+    <p class="inp">
+
+//Program to print the duplicate elements of an array.
+class FindDuplicateElements{
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 2, 5, 6, 7, 3, 8, 8};
+        findDuplicateElements(arr);
+    }
+
+    public static void findDuplicateElements(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] != -1) {
+                for (int j = i + 1; j < n; j++) {
+                    if (arr[i] == arr[j]) {
+                        System.out.println("Duplicate element: " + arr[i]);
+                        arr[j] = -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_1d4.png"></img>
+
+
+    <p class="h">/*5.Program to print the elements of an array*/</p>
+    <p class="inp">
+
+        
+class PrintArrayElements {
+    public static void main(String[] args) {
+        // Create an array of integers
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Print the elements of the array
+        System.out.println("Elements of the array:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+    }
+}
+        
+        
+        
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_1d5.png"></img>
+
+
+    <p class="h">/*6.Program to print the elements of an array in reverse order*/</p>
+    <p class="inp">
+class ReverseArray {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+        
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.println(array[i]);
+        }
+    }
+}
+
+        
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_1d6.png"></img>
+
+
+    <!-- <p class="h">7.</p>
+    <p class="inp">
+
+    </p>
+    <p class="h">Output</p>
+    <img src="2darray_6_7014.png"></img>
+
+
+    <p class="h">8.</p>
+    <p class="inp"></p>
+    <p class="h">Output</p>
+    <img src="2darray_6_7014.png"></img>
+
+
+    <p class="h">9.</p>
+    <p class="inp"></p>
+    <p class="h">Output</p>
+    <img src="2darray_6_7014.png"></img>
+
+
+    <p class="h">10.</p>
+    <p class="inp"></p>
+    <p class="h">Output</p>
+    <img src="2darray_6_7014.png"></img> -->
+
+
+</div>
+
+
+
+<!--String-->
+
+<div style="white-space: pre;padding-left: 10px;" id="string">
+
+    
+    <p class="h">/*1. Program to Check if a String contains only digits?*/
+
+    </p>
+    <p class="inp">
+// Java program for the above approach 
+// contains only digits 
+class string1 { 
+
+	// Function to check if a string 
+	// contains only digits 
+	public static boolean
+	onlyDigits(String str, int n) 
+	{ 
+		// Traverse the string from 
+		// start to end 
+		for (int i = 0; i < n; i++) { 
+
+			// Check if character is 
+			// not a digit between 0-9 
+			// then return false
+			if (str.charAt(i) < '0'
+				|| str.charAt(i) > '9') { 
+				return false; 
+			} 
+		} 
+		// If we reach here, that means 
+		// all characters were digits.
+		return true; 
+	} 
+
+	// Driver Code 
+	public static void main(String args[]) 
+	{ 
+		// Given string str 
+		String str = "1a234"; 
+		int len = str.length(); 
+
+		// Function Call 
+		System.out.println(onlyDigits(str, len)); 
+	} 
+}
+
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_string1.png"></img>
+
+
+
+    <p class="h">/*2.Program to perform Deep Copy for String?*/</p>
+    <p class="inp">
+
+class String2 
+{  
+// instance variable of the class ABC  
+int x = 30;  
+}  
+class DeepCopyExample   
+{     
+// main method  
+public static void main(String argvs[])   
+{  
+// creating an object of the class ABC  
+
+
+String2 obj1 = new String2();  
+  
+// it will copy the reference, not value  
+String2 obj2 = new String2();  
+  
+// updating the value to 6   
+// using the reference variable obj2  
+obj2.x = 6;  
+  
+// printing the value of x using reference variable obj1   
+System.out.println("The value of x is: " + obj1.x);  
+}  
+
+}
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_string2.png"></img>
+
+
+
+    <p class="h">/*3.Program to prove String is immutable programmatically?*/</p>
+    <p class="inp">
+
+class E {  
+    public static void check(Object x, Object y) {  
+        if (x == y) {  
+            System.out.println("Both pointing to the same reference");  
+        } 
+        else {  
+            System.out.println("Both are pointing to different reference");  
+        }  
+    }  
+    public static void main(String[] args) {  
+        String x = "hello";  
+        String y = "hello";  
+        System.out.println("Before Modification");  
+        check(x, y);  
+        System.out.println("--------------------");
+        x += "world";  
+        System.out.println("After Modification");  
+        check(x, y);  
+    }  
+}  
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_string3.png"></img>
+
+
+
+    <p class="h">/*4.Program to remove all occurrences of a given character from input String?*/</p>
+    <p class="inp">
+import java.util.Scanner;
+
+class RemoveCharacter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+        
+        System.out.print("Enter the character to remove: ");
+        char charToRemove = scanner.next().charAt(0);
+        
+        String result = removeCharacter(inputString, charToRemove);
+        System.out.println("Result: " + result);
+        
+        scanner.close();
+    }
+    
+    public static String removeCharacter(String inputString, char charToRemove) {
+        StringBuilder stringBuilder = new StringBuilder();
+        
+        for (int i = 0; i < inputString.length(); i++) {
+            char currentChar = inputString.charAt(i);
+            
+            if (currentChar != charToRemove) {
+                stringBuilder.append(currentChar);
+            }
+        }
+        
+        return stringBuilder.toString();
+    }
+}
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_string4.png"></img>
+
+
+
+    <p class="h">/*5.Program to append the string using StringBuffer class*/</p>
+    <p class="inp">
+        import java.lang.*; 
+class s { 
+
+	public static void main(String[] args) 
+	{ 
+
+		StringBuffer s1 = new StringBuffer("Yaman "); 
+		System.out.println("Input: " + s1); 
+
+		s1.append(true); 
+		System.out.println("Output: " + s1); 
+
+		System.out.println(); 
+
+		StringBuffer s2 = new StringBuffer("Sahota"); 
+		System.out.println("Input: " + s2); 
+
+		s2.append(false); 
+		System.out.println("Output: " + s2); 
+	} 
+} 
+
+    </p>
+    <p class="h">Output</p>
+    <img src="7007_string5.png"></img>
+
+
+</div>
+          
+
+
+
+ <!-- <script src="https://mayankdevil.github.io/JavaSolution/js/programData17.js"></script>
+<script>
+    for (let i = 0; i < programData17.length; i++) {
+
+        document.write("<div id='string'>");
+        // if (i != 13 && i != 14 && i != 45 && i != 46)
+        {
+            document.write("<div class='h3 '>"+programData17[i].problem+"</div>")
+            document.write("<pre>"+programData17[i].solution+"</pre>")
+            
+            
+            document.write("<img src="+programData17[i].comeout+">")
+        }
+        document.write("</div>");
+    }
+</script> -->
+<!--
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData16.js"></script>
+<script>
+    for (let i = 0; i < programData16.length; i++) {
+
+        document.write("<div id='package'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData16[i].problem+"</div>")
+            document.write("<pre>"+programData16[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData15.js"></script>
+<script>
+    for (let i = 0; i < programData15.length; i++) {
+
+        document.write("<div id='oops'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData15[i].problem+"</div>")
+            document.write("<pre>"+programData15[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData14.js"></script>
+<script>
+    for (let i = 0; i < programData14.length; i++) {
+
+        document.write("<div id='thread'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData14[i].problem+"</div>")
+            document.write("<pre>"+programData14[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData13.js"></script>
+<script>
+    for (let i = 0; i < programData13.length; i++) {
+
+        document.write("<div id='jdbc'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData13[i].problem+"</div>")
+            document.write("<pre>"+programData13[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData12.js"></script>
+<script>
+    for (let i = 0; i < programData12.length; i++) {
+
+        document.write("<div id='interfaces'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData12[i].problem+"</div>")
+            document.write("<pre>"+programData12[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData11.js"></script>
+<script>
+    for (let i = 0; i < programData11.length; i++) {
+
+        document.write("<div id='io'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData11[i].problem+"</div>")
+            document.write("<pre>"+programData11[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData10.js"></script>
+<script>
+    for (let i = 0; i < programData10.length; i++) {
+
+        document.write("<div id='inheritance'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData10[i].problem+"</div>")
+            document.write("<pre>"+programData10[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData9.js"></script>
+<script>
+    for (let i = 0; i < programData9.length; i++) {
+
+        document.write("<div id='awt'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData9[i].problem+"</div>")
+            document.write("<pre>"+programData9[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData8.js"></script>
+<script>
+    for (let i = 0; i < programData8.length; i++) {
+
+        document.write("<div id='functions'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData8[i].problem+"</div>")
+            document.write("<pre>"+programData8[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData7.js"></script>
+<script>
+    for (let i = 0; i < programData7.length; i++) {
+
+        document.write("<div id='exception'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData7[i].problem+"</div>")
+            document.write("<pre>"+programData7[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData6.js"></script>
+<script>
+    for (let i = 0; i < programData6.length; i++) {
+
+        document.write("<div id='event'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData6[i].problem+"</div>")
+            document.write("<pre>"+programData6[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData5.js"></script>
+<script>
+    var a;
+    for (let i = 0; i < programData5.length; i++) {
+
+        document.write("<div id='data'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData5[i].problem+"</div>")
+            document.write("<pre>"+programData5[i].solution+"</pre>")
+        }
+        document.write("</div>");
+        
+    }
+    a=i;
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData4.js"></script>
+<script>
+    for (let i = 0; i < programData4.length; i++) {
+
+        document.write("<div id='applet'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData4[i].problem+"</div>")
+            document.write("<pre>"+programData4[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData3.js"></script>
+<script>
+    for (let i = 0; i < programData3.length; i++) {
+
+        document.write("<div id='2darray'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData3[i].problem+"</div>")
+            document.write("<pre>"+programData3[i].solution+"</pre>")
+        } 
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData2.js"></script>
+<script>
+    for (let i = 0; i < programData2.length; i++) {
+
+        document.write("<div id='1darray'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData2[i].problem+"</div>")
+            document.write("<pre>"+programData2[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+</script>
+
+<script src="https://mayankdevil.github.io/JavaSolution/js/programData1.js"></script>
+<script>
+    for (let i = 0; i < programData1.length; i++) {
+
+        document.write("<div id='basic'>");
+        if (true)
+        {
+            document.write("<div class='h3 '>"+programData1[i].problem+"</div>")
+            document.write("<pre>"+programData1[i].solution+"</pre>")
+        }
+        document.write("</div>");
+    }
+
+    document.title="RohitSingla_7007"
+</script>
+
+</div>
+
+    </div>
+-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="script.js"></script> 
+
+</body>
+
+</html>
