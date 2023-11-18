@@ -1,0 +1,31 @@
+
+#nav
+{
+    background:#dc143c!important;
+}
+
+#mybutton
+{
+    color:#343a40;
+    background: #dc143c;
+    border-color: #2ecc71;
+}
+#mybutton:hover
+{
+    background: #dc143c;
+}
+
+.h3
+{
+    width: 100%;
+    padding-top: 20px;
+    color: #343a40;
+    background: #ffffff;
+}
+
+pre
+{
+    font-size: 18px;
+    color:#f8f9fa;
+    background: #343a40;
+}
